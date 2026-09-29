@@ -1,5 +1,27 @@
+# Secrets: never commit these
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*.json
+service-account*.json
+
+# Python / Jupyter
 .venv/
+venv/
 __pycache__/
+*.pyc
 .ipynb_checkpoints/
+
+# Model / dataset caches (downloaded on first run)
+.cache/
+*.safetensors
+*.bin
+
+# OS / editors / logs
 .DS_Store
+.vscode/
+.idea/
+*.log
