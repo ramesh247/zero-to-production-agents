@@ -1,0 +1,419 @@
+{
+  "worked_example": {
+    "text": "Tokenization isn't free: 'unbelievably' costs more than 'good'.",
+    "pieces": [
+      "Token",
+      "ization",
+      " isn't",
+      " free",
+      ":",
+      " '",
+      "un",
+      "bel",
+      "ievably",
+      "'",
+      " costs",
+      " more",
+      " than",
+      " '",
+      "good",
+      "'."
+    ],
+    "ids": [
+      4421,
+      2860,
+      12471,
+      2240,
+      25,
+      461,
+      373,
+      9880,
+      153516,
+      6,
+      8959,
+      945,
+      1572,
+      461,
+      30744,
+      6120
+    ],
+    "n_tokens": 16,
+    "n_chars": 63
+  },
+  "edge_cases": [
+    {
+      "group": "numbers",
+      "text": "'2026'",
+      "tokens": 2,
+      "pieces": "202 | 6",
+      "ids": [
+        1323,
+        21
+      ]
+    },
+    {
+      "group": "numbers",
+      "text": "'12345.678'",
+      "tokens": 4,
+      "pieces": "123 | 45 | . | 678",
+      "ids": [
+        7633,
+        2548,
+        13,
+        30833
+      ]
+    },
+    {
+      "group": "numbers",
+      "text": "'3.14159'",
+      "tokens": 4,
+      "pieces": "3 | . | 141 | 59",
+      "ids": [
+        18,
+        13,
+        16926,
+        4621
+      ]
+    },
+    {
+      "group": "numbers",
+      "text": "'1,000,000'",
+      "tokens": 5,
+      "pieces": "1 | , | 000 | , | 000",
+      "ids": [
+        16,
+        11,
+        1302,
+        11,
+        1302
+      ]
+    },
+    {
+      "group": "numbers",
+      "text": "'0x1F4A'",
+      "tokens": 6,
+      "pieces": "0 | x | 1 | F | 4 | A",
+      "ids": [
+        15,
+        87,
+        16,
+        37,
+        19,
+        32
+      ]
+    },
+    {
+      "group": "spacing",
+      "text": "'Hello'",
+      "tokens": 1,
+      "pieces": "Hello",
+      "ids": [
+        13225
+      ]
+    },
+    {
+      "group": "spacing",
+      "text": "' Hello'",
+      "tokens": 1,
+      "pieces": " Hello",
+      "ids": [
+        32949
+      ]
+    },
+    {
+      "group": "spacing",
+      "text": "'hello'",
+      "tokens": 1,
+      "pieces": "hello",
+      "ids": [
+        24912
+      ]
+    },
+    {
+      "group": "spacing",
+      "text": "'HELLO'",
+      "tokens": 2,
+      "pieces": "HEL | LO",
+      "ids": [
+        111642,
+        2699
+      ]
+    },
+    {
+      "group": "spacing",
+      "text": "'  Hello'",
+      "tokens": 2,
+      "pieces": "  |  Hello",
+      "ids": [
+        220,
+        32949
+      ]
+    },
+    {
+      "group": "code",
+      "text": "'def add(a, b):\\n    return a + b'",
+      "tokens": 11,
+      "pieces": "def |  add | (a | , |  b | ):\\n |     |  return |  a |  + |  b",
+      "ids": [
+        1314,
+        1147,
+        6271,
+        11,
+        287,
+        1883,
+        271,
+        622,
+        261,
+        659,
+        287
+      ]
+    },
+    {
+      "group": "code",
+      "text": "'for (let i = 0; i < n; i++) {}'",
+      "tokens": 15,
+      "pieces": "for |  ( | let |  i |  = |   | 0 | ; |  i |  < |  n | ; |  i | ++) |  {}",
+      "ids": [
+        1938,
+        350,
+        1347,
+        575,
+        314,
+        220,
+        15,
+        26,
+        575,
+        464,
+        297,
+        26,
+        575,
+        4352,
+        9902
+      ]
+    },
+    {
+      "group": "emoji",
+      "text": "'👍'",
+      "tokens": 1,
+      "pieces": "👍",
+      "ids": [
+        82514
+      ]
+    },
+    {
+      "group": "emoji",
+      "text": "'🔥🚀'",
+      "tokens": 3,
+      "pieces": "🔥 | � | �",
+      "ids": [
+        96606,
+        112927,
+        222
+      ]
+    },
+    {
+      "group": "emoji",
+      "text": "'👨\\u200d👩\\u200d👧'",
+      "tokens": 8,
+      "pieces": "� | � | \\u200d | � | � | \\u200d | � | �",
+      "ids": [
+        28823,
+        101,
+        2524,
+        28823,
+        102,
+        2524,
+        28823,
+        100
+      ]
+    },
+    {
+      "group": "typos",
+      "text": "'retrieval'",
+      "tokens": 2,
+      "pieces": "retr | ieval",
+      "ids": [
+        183226,
+        29979
+      ]
+    },
+    {
+      "group": "typos",
+      "text": "'retreival'",
+      "tokens": 3,
+      "pieces": "ret | re | ival",
+      "ids": [
+        3431,
+        264,
+        4552
+      ]
+    },
+    {
+      "group": "typos",
+      "text": "'retrievel'",
+      "tokens": 3,
+      "pieces": "retr | ie | vel",
+      "ids": [
+        183226,
+        396,
+        1002
+      ]
+    }
+  ],
+  "totals": {
+    "en": {
+      "GPT-4 (cl100k)": 92,
+      "GPT-4o (o200k)": 92,
+      "Qwen2.5": 92,
+      "XLM-R (multilingual)": 111
+    },
+    "es": {
+      "GPT-4 (cl100k)": 151,
+      "GPT-4o (o200k)": 128,
+      "Qwen2.5": 151,
+      "XLM-R (multilingual)": 138
+    }
+  },
+  "en_spread": {
+    "min": 92,
+    "max": 111,
+    "pct": 0.207
+  },
+  "es_over_en": {
+    "GPT-4 (cl100k)": 1.64,
+    "GPT-4o (o200k)": 1.39,
+    "Qwen2.5": 1.64,
+    "XLM-R (multilingual)": 1.24
+  },
+  "chars_es_over_en": 1.15,
+  "embedding_by_kind": {
+    "spanish translation": {
+      "cosine": 0.87,
+      "word overlap": 0.0
+    },
+    "same words, different meaning": {
+      "cosine": 0.67,
+      "word overlap": 0.66
+    },
+    "paraphrase (no shared words)": {
+      "cosine": 0.66,
+      "word overlap": 0.11
+    },
+    "unrelated": {
+      "cosine": 0.04,
+      "word overlap": 0.0
+    }
+  },
+  "embedding_rows": [
+    {
+      "anchor": "How do I reset my password?",
+      "candidate": "paraphrase (no shared words)",
+      "text": "I forgot my login credentials, what should I do?",
+      "cosine": 0.677,
+      "word overlap": 0.273
+    },
+    {
+      "anchor": "How do I reset my password?",
+      "candidate": "same words, different meaning",
+      "text": "How do I reset my router?",
+      "cosine": 0.437,
+      "word overlap": 0.714
+    },
+    {
+      "anchor": "How do I reset my password?",
+      "candidate": "spanish translation",
+      "text": "¿Cómo restablezco mi contraseña?",
+      "cosine": 0.933,
+      "word overlap": 0.0
+    },
+    {
+      "anchor": "How do I reset my password?",
+      "candidate": "unrelated",
+      "text": "The weather in Madrid is sunny today.",
+      "cosine": -0.026,
+      "word overlap": 0.0
+    },
+    {
+      "anchor": "The customer wants their money back.",
+      "candidate": "paraphrase (no shared words)",
+      "text": "A client is requesting a refund.",
+      "cosine": 0.784,
+      "word overlap": 0.0
+    },
+    {
+      "anchor": "The customer wants their money back.",
+      "candidate": "same words, different meaning",
+      "text": "The customer wants their order back on the shelf.",
+      "cosine": 0.682,
+      "word overlap": 0.556
+    },
+    {
+      "anchor": "The customer wants their money back.",
+      "candidate": "spanish translation",
+      "text": "El cliente quiere que le devuelvan su dinero.",
+      "cosine": 0.951,
+      "word overlap": 0.0
+    },
+    {
+      "anchor": "The customer wants their money back.",
+      "candidate": "unrelated",
+      "text": "Our office moves to a new building next week.",
+      "cosine": 0.124,
+      "word overlap": 0.0
+    },
+    {
+      "anchor": "The deployment failed because of a timeout.",
+      "candidate": "paraphrase (no shared words)",
+      "text": "Shipping the release broke: an operation ran too long.",
+      "cosine": 0.514,
+      "word overlap": 0.067
+    },
+    {
+      "anchor": "The deployment failed because of a timeout.",
+      "candidate": "same words, different meaning",
+      "text": "The deployment of troops failed because of a timeout in talks.",
+      "cosine": 0.899,
+      "word overlap": 0.7
+    },
+    {
+      "anchor": "The deployment failed because of a timeout.",
+      "candidate": "spanish translation",
+      "text": "El despliegue falló por un tiempo de espera agotado.",
+      "cosine": 0.73,
+      "word overlap": 0.0
+    },
+    {
+      "anchor": "The deployment failed because of a timeout.",
+      "candidate": "unrelated",
+      "text": "She baked bread with rosemary and olive oil.",
+      "cosine": 0.017,
+      "word overlap": 0.0
+    }
+  ],
+  "bank": {
+    "river bank": {
+      "river bank": 1.0,
+      "stream bank": 0.36000001430511475,
+      "deposit at bank": 0.25,
+      "bank loan": 0.18000000715255737
+    },
+    "stream bank": {
+      "river bank": 0.36000001430511475,
+      "stream bank": 1.0,
+      "deposit at bank": 0.05999999865889549,
+      "bank loan": -0.019999999552965164
+    },
+    "deposit at bank": {
+      "river bank": 0.25,
+      "stream bank": 0.05999999865889549,
+      "deposit at bank": 1.0,
+      "bank loan": 0.46000000834465027
+    },
+    "bank loan": {
+      "river bank": 0.18000000715255737,
+      "stream bank": -0.019999999552965164,
+      "deposit at bank": 0.46000000834465027,
+      "bank loan": 1.0
+    }
+  }
+}

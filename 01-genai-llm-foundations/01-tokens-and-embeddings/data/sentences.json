@@ -1,0 +1,67 @@
+{
+  "parallel": [
+    {"en": "Please summarize this support ticket in two sentences.",
+     "es": "Por favor, resume este ticket de soporte en dos frases."},
+    {"en": "The customer was charged twice for the same order and wants a refund.",
+     "es": "Al cliente se le cobró dos veces por el mismo pedido y quiere un reembolso."},
+    {"en": "Our deployment failed because the database migration timed out.",
+     "es": "Nuestro despliegue falló porque la migración de la base de datos agotó el tiempo de espera."},
+    {"en": "Translate the following paragraph and keep the technical terms unchanged.",
+     "es": "Traduce el siguiente párrafo y mantén los términos técnicos sin cambios."},
+    {"en": "What is the refund policy for annual subscriptions?",
+     "es": "¿Cuál es la política de reembolso para las suscripciones anuales?"},
+    {"en": "The model answered correctly, but it took eight seconds to respond.",
+     "es": "El modelo respondió correctamente, pero tardó ocho segundos en responder."},
+    {"en": "Write a short, friendly reply thanking the user for their feedback.",
+     "es": "Escribe una respuesta breve y amable agradeciendo al usuario por sus comentarios."},
+    {"en": "Extract the invoice number, the total amount and the due date.",
+     "es": "Extrae el número de factura, el importe total y la fecha de vencimiento."}
+  ],
+
+  "edge_cases": {
+    "numbers":  ["2026", "12345.678", "3.14159", "1,000,000", "0x1F4A"],
+    "spacing":  ["Hello", " Hello", "hello", "HELLO", "  Hello"],
+    "code":     ["def add(a, b):\n    return a + b", "for (let i = 0; i < n; i++) {}"],
+    "emoji":    ["👍", "🔥🚀", "👨‍👩‍👧"],
+    "typos":    ["retrieval", "retreival", "retrievel"]
+  },
+
+  "worked_example": "Tokenization isn't free: 'unbelievably' costs more than 'good'.",
+
+  "embedding_sets": [
+    {
+      "anchor": "How do I reset my password?",
+      "candidates": {
+        "paraphrase (no shared words)": "I forgot my login credentials, what should I do?",
+        "same words, different meaning": "How do I reset my router?",
+        "spanish translation": "¿Cómo restablezco mi contraseña?",
+        "unrelated": "The weather in Madrid is sunny today."
+      }
+    },
+    {
+      "anchor": "The customer wants their money back.",
+      "candidates": {
+        "paraphrase (no shared words)": "A client is requesting a refund.",
+        "same words, different meaning": "The customer wants their order back on the shelf.",
+        "spanish translation": "El cliente quiere que le devuelvan su dinero.",
+        "unrelated": "Our office moves to a new building next week."
+      }
+    },
+    {
+      "anchor": "The deployment failed because of a timeout.",
+      "candidates": {
+        "paraphrase (no shared words)": "Shipping the release broke: an operation ran too long.",
+        "same words, different meaning": "The deployment of troops failed because of a timeout in talks.",
+        "spanish translation": "El despliegue falló por un tiempo de espera agotado.",
+        "unrelated": "She baked bread with rosemary and olive oil."
+      }
+    }
+  ],
+
+  "bank": [
+    "I sat on the river bank and watched the water.",
+    "The grassy bank of the stream was muddy after the rain.",
+    "I deposited my salary at the bank this morning.",
+    "The bank approved my mortgage application."
+  ]
+}
