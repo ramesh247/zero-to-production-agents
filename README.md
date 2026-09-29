@@ -1,6 +1,11 @@
-# GenAI & Agentic AI Hands-on
+![The Agent Build Log](assets/banner.png)
 
-Runnable notebooks and projects from my LinkedIn series on Generative AI and Agentic AI.
+# The Agent Build Log: hands-on
+
+**Building agentic AI, one runnable project at a time.**
+
+The runnable code behind every post in *The Agent Build Log*, a LinkedIn series on Generative AI and Agentic AI (4 builds a week).
+Every project comes with an `INTERVIEW.md`: tricky interview questions, the trap answer, the real answer backed by the run, and a follow-up. Each track also has an `INTERVIEW-PREP.md` that collects all of them.
 The series runs in order, from LLM foundations to production multi-agent systems. Every project is self-contained: clone the repo, install `requirements.txt`, set your API key and run.
 
 | # | Track | Projects |
@@ -24,4 +29,6 @@ pip install -r requirements.txt
 cp .env.example .env   # add your ANTHROPIC_API_KEY
 ```
 
-Follow along on LinkedIn for a new project four times a week.
+**Follow the build log on LinkedIn** for a new build four times a week: <your-linkedin-profile-url>
+
+⭐ Star the repo if a build saved you time.
