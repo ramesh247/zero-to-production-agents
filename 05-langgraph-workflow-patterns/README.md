@@ -1,6 +1,6 @@
 # 05. LangGraph Core Workflow Patterns
 
-Part 5 of the [genai-handson](../README.md) series.
+Part 5 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|

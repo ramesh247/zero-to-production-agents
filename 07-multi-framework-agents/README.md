@@ -1,6 +1,6 @@
 # 07. Multi-Framework Agent Development
 
-Part 7 of the [genai-handson](../README.md) series.
+Part 7 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|

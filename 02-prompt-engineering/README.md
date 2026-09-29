@@ -1,6 +1,6 @@
 # 02. Prompt Engineering
 
-Part 2 of the [genai-handson](../README.md) series.
+Part 2 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|

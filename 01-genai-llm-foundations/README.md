@@ -1,6 +1,6 @@
 # 01. GenAI & LLM Foundations
 
-Part 1 of the [genai-handson](../README.md) series.
+Part 1 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|

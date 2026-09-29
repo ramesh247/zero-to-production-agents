@@ -1,6 +1,6 @@
 # 08. Context Engineering & Agent Evaluations
 
-Part 8 of the [genai-handson](../README.md) series.
+Part 8 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|

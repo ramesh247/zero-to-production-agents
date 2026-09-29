@@ -1,6 +1,6 @@
 # 04. AI Agents Foundations & First ReAct Agent
 
-Part 4 of the [genai-handson](../README.md) series.
+Part 4 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|

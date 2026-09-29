@@ -1,6 +1,6 @@
 # 06. MultiAgent Architectures
 
-Part 6 of the [genai-handson](../README.md) series.
+Part 6 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|

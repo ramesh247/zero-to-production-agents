@@ -10,8 +10,8 @@ An LLM never reads your words. It reads token IDs and turns them into vectors. T
 ## Quickstart
 No API key is needed, and the notebook costs $0 to run. The first run downloads about 0.5 GB of model files.
 ```sh
-git clone https://github.com/<your-github-username>/genai-handson.git
-cd genai-handson/01-genai-llm-foundations/01-tokens-and-embeddings
+git clone https://github.com/ramesh247/zero-to-production-agents.git
+cd zero-to-production-agents/01-genai-llm-foundations/01-tokens-and-embeddings
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt jupyter
 jupyter notebook notebook.ipynb

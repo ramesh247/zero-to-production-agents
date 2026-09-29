@@ -1,6 +1,6 @@
 # 03. RAG System
 
-Part 3 of the [genai-handson](../README.md) series.
+Part 3 of [Zero to Production Agents](../README.md).
 
 | # | Project | Type | Status |
 |---|---|---|---|
