@@ -46,4 +46,4 @@ The surprise: in one set, "The deployment **of troops** failed because of a time
 - [`INTERVIEW.md`](INTERVIEW.md): 8 interview questions, each with a trap answer, a real answer and a follow-up, backed by this run
 
 ---
-Part of [The Agent Build Log](../../README.md): follow the series on LinkedIn. Next: [02 · Temperature, top-p, top-k](../README.md).
+Part of [The Agent Build Log](../../README.md): follow the series on LinkedIn. Next: [02 · Temperature, top-p, top-k](../02-sampling-parameters/).

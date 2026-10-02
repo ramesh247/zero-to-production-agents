@@ -5,7 +5,7 @@ Part 1 of [Zero to Production Agents](../README.md).
 | # | Project | Type | Status |
 |---|---|---|---|
 | 01 | [What an LLM actually sees: tokens and embeddings](01-tokens-and-embeddings/) | notebook | ✅ [interview pack](01-tokens-and-embeddings/INTERVIEW.md) |
-| 02 | Temperature, top-p, top-k: a visual guide to sampling | notebook | coming soon |
+| 02 | [Temperature, top-p, top-k: a visual guide to sampling](02-sampling-parameters/) | notebook | ✅ [interview pack](02-sampling-parameters/INTERVIEW.md) |
 | 03 | Your first LLM API call, done properly (streaming, retries, errors) | notebook | coming soon |
 | 04 | Getting reliable JSON out of an LLM | notebook | coming soon |
 | 05 | Context windows, tokens and what your prompt really costs | notebook | coming soon |

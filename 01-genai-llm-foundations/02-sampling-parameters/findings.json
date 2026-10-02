@@ -1,0 +1,197 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "demo_prompt": "The best programming language for beginners is",
+  "demo_top": [
+    {
+      "token": "' C'",
+      "probability": 0.181
+    },
+    {
+      "token": "' Python'",
+      "probability": 0.119
+    },
+    {
+      "token": "' Java'",
+      "probability": 0.082
+    },
+    {
+      "token": "' __'",
+      "probability": 0.067
+    },
+    {
+      "token": "' ______'",
+      "probability": 0.055
+    },
+    {
+      "token": "' ____'",
+      "probability": 0.043
+    },
+    {
+      "token": "' not'",
+      "probability": 0.031
+    },
+    {
+      "token": "' ('",
+      "probability": 0.03
+    }
+  ],
+  "temperature_table": [
+    {
+      "temperature": 0.2,
+      "top token %": 86.5,
+      "top 5 tokens %": 99.9,
+      "tokens to reach 90%": 2,
+      "entropy (nats)": 0.49
+    },
+    {
+      "temperature": 0.5,
+      "top token %": 48.2,
+      "top 5 tokens %": 90.5,
+      "tokens to reach 90%": 5,
+      "entropy (nats)": 1.69
+    },
+    {
+      "temperature": 0.7,
+      "top token %": 32.9,
+      "top 5 tokens %": 75.9,
+      "tokens to reach 90%": 12,
+      "entropy (nats)": 2.45
+    },
+    {
+      "temperature": 1.0,
+      "top token %": 18.1,
+      "top 5 tokens %": 50.5,
+      "tokens to reach 90%": 77,
+      "entropy (nats)": 3.85
+    },
+    {
+      "temperature": 1.5,
+      "top token %": 5.3,
+      "top 5 tokens %": 17.6,
+      "tokens to reach 90%": 5951,
+      "entropy (nats)": 7.02
+    },
+    {
+      "temperature": 2.0,
+      "top token %": 1.4,
+      "top 5 tokens %": 5.0,
+      "tokens to reach 90%": 35971,
+      "entropy (nats)": 9.4
+    }
+  ],
+  "cut_table": [
+    {
+      "prompt": "The capital of France is",
+      "temperature": 0.7,
+      "top token %": 56.6,
+      "top-k=50 keeps": 50,
+      "top-p=0.9 keeps": 8,
+      "top-p=0.5 keeps": 1
+    },
+    {
+      "prompt": "The capital of France is",
+      "temperature": 1.0,
+      "top token %": 31.6,
+      "top-k=50 keeps": 50,
+      "top-p=0.9 keeps": 37,
+      "top-p=0.5 keeps": 4
+    },
+    {
+      "prompt": "The capital of France is",
+      "temperature": 1.5,
+      "top token %": 9.2,
+      "top-k=50 keeps": 50,
+      "top-p=0.9 keeps": 5351,
+      "top-p=0.5 keeps": 42
+    },
+    {
+      "prompt": "My favourite thing to cook on weekends is",
+      "temperature": 0.7,
+      "top token %": 15.6,
+      "top-k=50 keeps": 50,
+      "top-p=0.9 keeps": 115,
+      "top-p=0.5 keeps": 8
+    },
+    {
+      "prompt": "My favourite thing to cook on weekends is",
+      "temperature": 1.0,
+      "top token %": 5.9,
+      "top-k=50 keeps": 50,
+      "top-p=0.9 keeps": 710,
+      "top-p=0.5 keeps": 49
+    },
+    {
+      "prompt": "My favourite thing to cook on weekends is",
+      "temperature": 1.5,
+      "top token %": 1.4,
+      "top-k=50 keeps": 50,
+      "top-p=0.9 keeps": 10995,
+      "top-p=0.5 keeps": 442
+    }
+  ],
+  "generation": [
+    {
+      "setting": "greedy (T=0)",
+      "distinct (of 10)": 1,
+      "distinct-2": 0.06,
+      "repeat-4": 0.22,
+      "avg logprob": -0.66
+    },
+    {
+      "setting": "T=0.3",
+      "distinct (of 10)": 10,
+      "distinct-2": 0.45,
+      "repeat-4": 0.17,
+      "avg logprob": -0.95
+    },
+    {
+      "setting": "T=0.7",
+      "distinct (of 10)": 10,
+      "distinct-2": 0.81,
+      "repeat-4": 0.01,
+      "avg logprob": -2.23
+    },
+    {
+      "setting": "T=1.0",
+      "distinct (of 10)": 10,
+      "distinct-2": 0.99,
+      "repeat-4": 0.0,
+      "avg logprob": -4.28
+    },
+    {
+      "setting": "T=1.5",
+      "distinct (of 10)": 10,
+      "distinct-2": 1.0,
+      "repeat-4": 0.0,
+      "avg logprob": -9.83
+    },
+    {
+      "setting": "T=1.0, top-k=20",
+      "distinct (of 10)": 10,
+      "distinct-2": 0.87,
+      "repeat-4": 0.0,
+      "avg logprob": -2.34
+    },
+    {
+      "setting": "T=1.0, top-p=0.9",
+      "distinct (of 10)": 10,
+      "distinct-2": 0.94,
+      "repeat-4": 0.01,
+      "avg logprob": -2.53
+    },
+    {
+      "setting": "T=1.5, top-p=0.9",
+      "distinct (of 10)": 10,
+      "distinct-2": 1.0,
+      "repeat-4": 0.0,
+      "avg logprob": -8.52
+    }
+  ],
+  "generation_prompt": "Three tips for writing clean code:\n1.",
+  "examples": {
+    "greedy (T=0)": " Write clean code by following the SOLID principles.\n2. Write clean code by following the PEP8 style guide.\n3. Write clean code by following the DRY principle.\n4. Write clean",
+    "T=0.7": " Don't code for the world.\n2. Don't code for your own personal comfort.\n3. Don't code for your personal knowledge.\n\nThat's not a new thing. The old saying, \"",
+    "T=1.5": " External conversions...\nMichael Hewald answers black-and-white graphical assists old contraceptive覚ncere法家具sad tiến oxide_BUSCA濟_todo Ansisk盼 jobhelhealthy Capattດ السابع blended ü🐮 Código",
+    "T=1.5, top-p=0.9": " External conversions...\nMichael Hewald answers black-and-white graphical assists old accepted methods,...\nUsing Variadic functions: Seppo Pyna consulting newsletter on Introduction jobhel locking Capwords presentation description blended expresses legislative projection"
+  }
+}

@@ -15,3 +15,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | Your semantic search matched a sentence about troops to a question about a failed software deployment. What went wrong? |
 | Senior | A user asks in Spanish; your documents are in English. Do you have to translate before retrieving? |
 | Senior | Does the word "bank" have one embedding? |
+
+## 02 · Temperature, top-p, top-k ([full pack](02-sampling-parameters/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | What does temperature = 0 actually do? |
+| Junior | Does a higher temperature let the model use new words? |
+| Mid | top-k vs top-p: what's the difference? |
+| Mid ⭐ | You set top-p = 0.9 as a safety net, so T = 1.5 is safe, right? |
+| Mid | The model says the best language for beginners is C. Is that its opinion? |
+| Senior | Your agent repeats the same step over and over at temperature 0. Why? |
+| Senior | How do you choose a temperature with data instead of gut feel? |
+| Senior | Your code sets temperature=0, and the new model's API rejects it. What now? |
