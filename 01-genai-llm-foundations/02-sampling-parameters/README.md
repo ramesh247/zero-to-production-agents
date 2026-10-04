@@ -50,4 +50,4 @@ The surprise: **top-p=0.9 at T=1.5 still allowed 10,995 candidate tokens** on an
 **Builds on:** [01 · Tokens and embeddings](../01-tokens-and-embeddings/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [03 · Your first LLM API call](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [03 · Your first LLM API call](../03-first-llm-api-call/).

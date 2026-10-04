@@ -28,3 +28,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | Your agent repeats the same step over and over at temperature 0. Why? |
 | Senior | How do you choose a temperature with data instead of gut feel? |
 | Senior | Your code sets temperature=0, and the new model's API rejects it. What now? |
+
+## 03 · Your first LLM API call, done properly ([full pack](03-first-llm-api-call/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Your call returned 200 OK, but the answer stops mid-sentence. What happened? |
+| Junior | Does streaming make the model faster? |
+| Junior | How do you know what one call cost? |
+| Mid | Which errors should you retry? |
+| Mid ⭐ | How many retries should you configure? |
+| Mid | You set a 2-second timeout to keep the app snappy. What breaks? |
+| Senior | Your bug report says "the LLM call failed". What do you need to debug it? |
+| Senior | After upgrading the SDK, a call with `temperature` fails before reaching the API. Why? |

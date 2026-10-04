@@ -1,0 +1,176 @@
+{
+  "model": "claude-haiku-4-5",
+  "sdk": "1.11.0",
+  "naive_seconds": 0.69,
+  "anatomy": [
+    {
+      "max_tokens": 400,
+      "stop_reason": "end_turn",
+      "input tokens": 23,
+      "output tokens": 94,
+      "cost $": 0.000493
+    },
+    {
+      "max_tokens": 25,
+      "stop_reason": "max_tokens",
+      "input tokens": 23,
+      "output tokens": 25,
+      "cost $": 0.000148
+    }
+  ],
+  "cut_text": "# 5 Reasons an API Call Can Fail\n\n1. **Invalid authentication** - Missing or expired credentials/",
+  "streaming_runs": [
+    {
+      "mode": "non-streaming",
+      "first text (s)": 3.06,
+      "total (s)": 3.06,
+      "output tokens": 258
+    },
+    {
+      "mode": "streaming",
+      "first text (s)": 0.456,
+      "total (s)": 2.636,
+      "output tokens": 245
+    },
+    {
+      "mode": "non-streaming",
+      "first text (s)": 4.601,
+      "total (s)": 4.601,
+      "output tokens": 257
+    },
+    {
+      "mode": "streaming",
+      "first text (s)": 0.596,
+      "total (s)": 2.979,
+      "output tokens": 245
+    },
+    {
+      "mode": "non-streaming",
+      "first text (s)": 2.95,
+      "total (s)": 2.95,
+      "output tokens": 256
+    },
+    {
+      "mode": "streaming",
+      "first text (s)": 0.578,
+      "total (s)": 3.051,
+      "output tokens": 258
+    },
+    {
+      "mode": "non-streaming",
+      "first text (s)": 3.032,
+      "total (s)": 3.032,
+      "output tokens": 264
+    },
+    {
+      "mode": "streaming",
+      "first text (s)": 0.62,
+      "total (s)": 3.326,
+      "output tokens": 263
+    },
+    {
+      "mode": "non-streaming",
+      "first text (s)": 2.695,
+      "total (s)": 2.695,
+      "output tokens": 258
+    },
+    {
+      "mode": "streaming",
+      "first text (s)": 1.83,
+      "total (s)": 4.227,
+      "output tokens": 258
+    }
+  ],
+  "streaming_median": [
+    {
+      "mode": "non-streaming",
+      "first text (s)": 3.03,
+      "total (s)": 3.03,
+      "output tokens": 258.0
+    },
+    {
+      "mode": "streaming",
+      "first text (s)": 0.6,
+      "total (s)": 3.05,
+      "output tokens": 258.0
+    }
+  ],
+  "errors": [
+    {
+      "case": "wrong model name",
+      "exception": "NotFoundError",
+      "status": 404,
+      "HTTP attempts": 1,
+      "seconds": 0.23
+    },
+    {
+      "case": "invalid request (empty messages list)",
+      "exception": "BadRequestError",
+      "status": 400,
+      "HTTP attempts": 1,
+      "seconds": 0.21
+    },
+    {
+      "case": "bad API key",
+      "exception": "AuthenticationError",
+      "status": 401,
+      "HTTP attempts": 1,
+      "seconds": 0.14
+    },
+    {
+      "case": "server unreachable",
+      "exception": "APIConnectionError",
+      "status": "-",
+      "HTTP attempts": 3,
+      "seconds": 1.42
+    }
+  ],
+  "retries": [
+    {
+      "max_retries": 0,
+      "succeeded": "23/40",
+      "success %": 57,
+      "HTTP attempts": 40,
+      "injected failures": 17,
+      "seconds": 13.7
+    },
+    {
+      "max_retries": 2,
+      "succeeded": "38/40",
+      "success %": 95,
+      "HTTP attempts": 60,
+      "injected failures": 22,
+      "seconds": 31.1
+    },
+    {
+      "max_retries": 4,
+      "succeeded": "40/40",
+      "success %": 100,
+      "HTTP attempts": 62,
+      "injected failures": 22,
+      "seconds": 41.6
+    }
+  ],
+  "timeouts": [
+    {
+      "mode": "non-streaming, 2s timeout",
+      "result": "APITimeoutError",
+      "output tokens": 0,
+      "seconds": 2.04
+    },
+    {
+      "mode": "streaming, 2s timeout",
+      "result": "ok",
+      "output tokens": 1055,
+      "seconds": 12.23
+    }
+  ],
+  "production_call": {
+    "stop_reason": "end_turn",
+    "first text (s)": 0.45,
+    "total (s)": 1.42,
+    "input tokens": 23,
+    "output tokens": 85,
+    "cost $": 0.000448
+  }
+}
