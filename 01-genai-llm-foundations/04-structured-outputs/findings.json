@@ -1,0 +1,350 @@
+{
+  "model": "claude-haiku-4-5",
+  "sdk": "1.11.0",
+  "tickets": 20,
+  "side_by_side": [
+    {
+      "approach": "A: \"reply in JSON\" (strict parse)",
+      "usable (schema-valid)": "0/20",
+      "usable %": 0,
+      "API calls": 20,
+      "median s / ticket": 0.89,
+      "avg out tokens": 73,
+      "cost $ (20 tickets)": 0.0086
+    },
+    {
+      "approach": "A + salvage hack (strip fences, grab {...})",
+      "usable (schema-valid)": "0/20",
+      "usable %": 0,
+      "API calls": "same calls",
+      "median s / ticket": 0.89,
+      "avg out tokens": 73,
+      "cost $ (20 tickets)": 0.0086
+    },
+    {
+      "approach": "B: schema in prompt, first try",
+      "usable (schema-valid)": "0/20",
+      "usable %": 0,
+      "API calls": 40,
+      "median s / ticket": 1.53,
+      "avg out tokens": 125,
+      "cost $ (20 tickets)": 0.0267
+    },
+    {
+      "approach": "B: schema in prompt + 1 retry",
+      "usable (schema-valid)": "10/20",
+      "usable %": 50,
+      "API calls": 40,
+      "median s / ticket": 1.53,
+      "avg out tokens": 125,
+      "cost $ (20 tickets)": 0.0267
+    },
+    {
+      "approach": "B: schema in prompt + salvage hack, first try",
+      "usable (schema-valid)": "20/20",
+      "usable %": 100,
+      "API calls": 20,
+      "median s / ticket": 0.81,
+      "avg out tokens": 68,
+      "cost $ (20 tickets)": 0.0128
+    },
+    {
+      "approach": "C: structured outputs",
+      "usable (schema-valid)": "20/20",
+      "usable %": 100,
+      "API calls": 20,
+      "median s / ticket": 0.94,
+      "avg out tokens": 47,
+      "cost $ (20 tickets)": 0.0157
+    }
+  ],
+  "a_fail_reasons": {
+    "not JSON": 20
+  },
+  "a_fenced": 20,
+  "a_sample_raw": "```json\n{\n  \"category\": \"Billing\",\n  \"priority\": \"High\",\n  \"order_id\": \"ORD-48213\",\n  \"refund_amount\": \"$49.99\",\n  \"customer_email\": \"jane.doe@example.com\",\n  \"sentiment\": \"Neutral\"\n}\n```",
+  "c_sample_raw": "{\"category\": \"billing\", \"priority\": \"high\", \"order_id\": \"ORD-48213\", \"refund_amount\": 49.99, \"customer_email\": \"jane.doe@example.com\", \"sentiment\": \"neutral\"}",
+  "a_errors": [
+    {
+      "id": 1,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; refund_amount float_parsing"
+    },
+    {
+      "id": 2,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; refund_amount float_parsing"
+    },
+    {
+      "id": 3,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 4,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 5,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 6,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; refund_amount float_parsing"
+    },
+    {
+      "id": 7,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 8,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 9,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 10,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 11,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 12,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; refund_amount float_parsing"
+    },
+    {
+      "id": 13,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; refund_amount float_parsing"
+    },
+    {
+      "id": 14,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 15,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 16,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 17,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; refund_amount float_parsing"
+    },
+    {
+      "id": 18,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 19,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; sentiment literal_error"
+    },
+    {
+      "id": 20,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "salvage_error": "schema: category literal_error; priority literal_error; refund_amount float_parsing"
+    }
+  ],
+  "b_first_errors": [
+    {
+      "id": 1,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 2,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 3,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 4,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 5,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 6,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 7,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 8,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 9,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 10,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 11,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 12,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 13,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 14,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 15,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 16,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 17,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 18,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 19,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    },
+    {
+      "id": 20,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0"
+    }
+  ],
+  "b_first_fenced": 20,
+  "b_sample_first_raw": "```json\n{\n  \"category\": \"billing\",\n  \"priority\": \"high\",\n  \"order_id\": \"ORD-48213\",\n  \"refund_amount\": 49.99,\n  \"customer_email\": \"jane.doe@example.com\",\n  \"sentiment\": \"neutral\"\n}\n```",
+  "b_final_failures": [
+    {
+      "id": 1,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"billing\",\n  \"priority\": \"high\",\n  \"order_id\": \"ORD-48213\",\n  \"refund_amount\": 49.99,\n  \"customer_email\": \"jane.doe@example.com\",\n  \"sentiment\": \"neutral\"\n}\n```"
+    },
+    {
+      "id": 3,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"feature_request\",\n  \"priority\": \"low\",\n  \"order_id\": null,\n  \"refund_amount\": null,\n  \"customer_email\": null,\n  \"sentiment\": \"positive\"\n}\n```"
+    },
+    {
+      "id": 5,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"account\",\n  \"priority\": \"high\",\n  \"order_id\": null,\n  \"refund_amount\": null,\n  \"customer_email\": \"priya.k@example.org\",\n  \"sentiment\": \"negative\"\n}\n```"
+    },
+    {
+      "id": 7,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\"category\": \"bug\", \"priority\": \"low\", \"order_id\": null, \"refund_amount\": null, \"customer_email\": null, \"sentiment\": \"neutral\"}\n```"
+    },
+    {
+      "id": 10,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"shipping\",\n  \"priority\": \"high\",\n  \"order_id\": \"ORD-55002\",\n  \"refund_amount\": 120,\n  \"customer_email\": \"carlos@example.com\",\n  \"sentiment\": \"negative\"\n}\n```"
+    },
+    {
+      "id": 11,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"feature_request\",\n  \"priority\": \"medium\",\n  \"order_id\": null,\n  \"refund_amount\": null,\n  \"customer_email\": null,\n  \"sentiment\": \"positive\"\n}\n```"
+    },
+    {
+      "id": 12,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"account\",\n  \"priority\": \"urgent\",\n  \"order_id\": null,\n  \"refund_amount\": null,\n  \"customer_email\": \"sam.lee@example.net\",\n  \"sentiment\": \"negative\"\n}\n```"
+    },
+    {
+      "id": 16,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"feature_request\",\n  \"priority\": \"low\",\n  \"order_id\": null,\n  \"refund_amount\": null,\n  \"customer_email\": null,\n  \"sentiment\": \"positive\"\n}\n```"
+    },
+    {
+      "id": 19,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\"category\": \"shipping\", \"priority\": \"medium\", \"order_id\": \"ORD-24477\", \"refund_amount\": null, \"customer_email\": \"tom@example.com\", \"sentiment\": \"positive\"}\n```"
+    },
+    {
+      "id": 20,
+      "error": "not JSON: Expecting value: line 1 column 1 (char 0",
+      "raw": "```json\n{\n  \"category\": \"bug\",\n  \"priority\": \"high\",\n  \"order_id\": null,\n  \"refund_amount\": null,\n  \"customer_email\": null,\n  \"sentiment\": \"negative\"\n}\n```"
+    }
+  ],
+  "c_first_call_s": 1.98,
+  "c_median_rest_s": 0.93,
+  "accuracy": [
+    {
+      "approach": "A + salvage",
+      "usable": 0,
+      "order_id": "0/0",
+      "refund_amount": "0/0",
+      "customer_email": "0/0",
+      "category": "0/0",
+      "priority": "0/0",
+      "sentiment": "0/0"
+    },
+    {
+      "approach": "B + retry",
+      "usable": 10,
+      "order_id": "10/10",
+      "refund_amount": "10/10",
+      "customer_email": "10/10",
+      "category": "10/10",
+      "priority": "8/10",
+      "sentiment": "8/10"
+    },
+    {
+      "approach": "B + salvage (first try)",
+      "usable": 20,
+      "order_id": "20/20",
+      "refund_amount": "20/20",
+      "customer_email": "20/20",
+      "category": "20/20",
+      "priority": "17/20",
+      "sentiment": "16/20"
+    },
+    {
+      "approach": "C: structured outputs",
+      "usable": 20,
+      "order_id": "20/20",
+      "refund_amount": "20/20",
+      "customer_email": "20/20",
+      "category": "20/20",
+      "priority": "18/20",
+      "sentiment": "14/20"
+    }
+  ],
+  "c_objective_mistakes": []
+}

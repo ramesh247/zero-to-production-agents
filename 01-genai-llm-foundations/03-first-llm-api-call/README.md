@@ -45,4 +45,4 @@ jupyter notebook notebook.ipynb
 **Builds on:** [01 · Tokens](../01-tokens-and-embeddings/) (what you pay for) and [02 · Sampling](../02-sampling-parameters/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [04 · Getting reliable JSON out of an LLM](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [04 · Getting reliable JSON out of an LLM](../04-structured-outputs/).
