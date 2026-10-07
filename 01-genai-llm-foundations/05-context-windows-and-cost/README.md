@@ -4,7 +4,7 @@ Where do the tokens in a real LLM bill come from? This notebook measures the fou
 
 **What you'll learn**
 - Why the same data can cost **2.4× more** depending on format, and why YAML isn't the compact option it looks like
-- Why a chatbot's 10th turn costs far more than its 1st, and what a sliding window saves
+- Why a chatbot's 10th turn sends 80× the input tokens of its 1st, and what a sliding window saves
 - Why **output length**, not your prompt, is usually most of the bill
 
 ## Quickstart
