@@ -20,9 +20,9 @@ and turns 4 and 9 hit that cap.
 - **Follow-up answer:** Where humans edit the text (configs, prompts you maintain by hand). For data you generate and send on every request, measure: `count_tokens` takes seconds and costs nothing per call.
 - Notebook: [§1](notebook.ipynb#1-how-data-is-formatted-changes-what-it-costs)
 
-### ⭐ 3. Your chatbot's 10th message costs far more than its 1st. Why? · Mid
+### ⭐ 3. Your chatbot's 10th message sends 80× the input tokens of its 1st. Why? · Mid
 - **Trap:** "The answers get longer as the conversation goes on."
-- **Answer:** The API is **stateless**: every turn re-sends the whole conversation. Billed input went from **46 tokens on turn 1 to 3,660 on turn 10**, about 80×, while each answer stayed around 400 tokens or less. Ten turns added up to **18,441 input tokens**.
+- **Answer:** The API is **stateless**: every turn re-sends the whole conversation. Billed input went from **46 tokens on turn 1 to 3,660 on turn 10**, about 80×, while each answer stayed around 400 tokens or less. Ten turns added up to **18,441 input tokens**. The cost per turn grew less, **$0.001951 → $0.004895 (about 2.5×)**, because on Haiku the output tokens dominate the price, but the input share keeps rising with every turn.
 - **Follow-up:** How do you cut that without dropping the conversation?
 - **Follow-up answer:** Send less history. Keeping only the system prompt and the last 2 exchanges would have sent **7,261 input tokens, 61% fewer**. That's a token count, not a quality test: the model would lose earlier context, so summarise older turns instead of just dropping them. And cache the repeated prefix (build #006).
 - Notebook: [§2](notebook.ipynb#2-chat-history-the-cost-that-compounds)

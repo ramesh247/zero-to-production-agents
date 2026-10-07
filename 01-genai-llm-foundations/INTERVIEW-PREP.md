@@ -61,7 +61,7 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 |---|---|
 | Junior | Same data, same model. Why did one prompt cost 2.4× more than another? |
 | Junior | YAML is more compact than JSON, right? |
-| Mid ⭐ | Your chatbot's 10th message costs far more than its 1st. Why? |
+| Mid ⭐ | Your chatbot's 10th message sends 80× the input tokens of its 1st. Why? |
 | Mid | Which costs more: the prompt you send or the answer you get? |
 | Mid | How do you know what a request will cost before you send it? |
 | Senior | The model has a 200K-token context window. Can you just paste in all your tickets? |
