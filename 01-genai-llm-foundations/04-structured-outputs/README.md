@@ -43,4 +43,4 @@ jupyter notebook notebook.ipynb
 **Builds on:** [03 · Your first LLM API call](../03-first-llm-api-call/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [05 · Context windows and cost](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [05 · Context windows and cost](../05-context-windows-and-cost/).

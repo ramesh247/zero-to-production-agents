@@ -54,3 +54,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | The first structured-output call was twice as slow as the rest. Why? |
 | Senior | Your schema says `refund_amount` must be ≥ 0. Will the API enforce it? |
 | Senior | One ticket is in Spanish. Do you need a separate pipeline? |
+
+## 05 · Context windows, tokens and what your prompt really costs ([full pack](05-context-windows-and-cost/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Same data, same model. Why did one prompt cost 2.4× more than another? |
+| Junior | YAML is more compact than JSON, right? |
+| Mid ⭐ | Your chatbot's 10th message costs far more than its 1st. Why? |
+| Mid | Which costs more: the prompt you send or the answer you get? |
+| Mid | How do you know what a request will cost before you send it? |
+| Senior | The model has a 200K-token context window. Can you just paste in all your tickets? |
+| Senior | Two chat answers came back exactly 400 tokens long. Coincidence? |
+| Senior | A sliding window saved 61% of input tokens. What did it cost you? |
