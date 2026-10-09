@@ -1,0 +1,6 @@
+anthropic>=1,<2
+python-dotenv>=1,<2
+pandas>=2,<3
+pydantic>=2,<3
+pillow>=10.1,<13
+ipywidgets>=8,<9

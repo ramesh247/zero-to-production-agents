@@ -1,0 +1,1764 @@
+{
+  "sdk": "1.13.0",
+  "configs": {
+    "Haiku 4.5": {
+      "model": "claude-haiku-4-5",
+      "price": [
+        1.0,
+        5.0
+      ],
+      "thinking": "off (default)"
+    },
+    "Haiku 5.5": {
+      "model": "claude-haiku-5-5",
+      "price": [
+        0.1,
+        0.5
+      ],
+      "thinking": "adaptive, effort medium (default)"
+    },
+    "Haiku 5.5, thinking off": {
+      "model": "claude-haiku-5-5",
+      "price": [
+        0.1,
+        0.5
+      ],
+      "thinking": "off"
+    },
+    "Sonnet 5.5": {
+      "model": "claude-sonnet-5-5",
+      "price": [
+        2.0,
+        10.0
+      ],
+      "thinking": "adaptive, effort high (default)"
+    },
+    "Opus 5.5": {
+      "model": "claude-opus-5-5",
+      "price": [
+        4.0,
+        20.0
+      ],
+      "thinking": "adaptive, effort medium (default; can't be turned off)"
+    }
+  },
+  "truth": {
+    "q1": 2,
+    "q2": 5,
+    "q3": 2002,
+    "q4": "SKU-1015",
+    "q5": 153.78,
+    "q6": 26,
+    "q7": "Orbit",
+    "q8": 503512,
+    "q9": 28,
+    "q10": "SKU-1129"
+  },
+  "task_a": [
+    {
+      "config": "Haiku 4.5",
+      "objective (of 60)": 60,
+      "agrees with my labels (of 60)": 51,
+      "median s / ticket": 1.45,
+      "avg output tokens": 48.0,
+      "cost $ (20 tickets)": 0.01592
+    },
+    {
+      "config": "Haiku 5.5",
+      "objective (of 60)": 60,
+      "agrees with my labels (of 60)": 52,
+      "median s / ticket": 1.57,
+      "avg output tokens": 57.0,
+      "cost $ (20 tickets)": 0.00192
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "objective (of 60)": 60,
+      "agrees with my labels (of 60)": 53,
+      "median s / ticket": 1.53,
+      "avg output tokens": 58.0,
+      "cost $ (20 tickets)": 0.00193
+    },
+    {
+      "config": "Sonnet 5.5",
+      "objective (of 60)": 60,
+      "agrees with my labels (of 60)": 52,
+      "median s / ticket": 1.74,
+      "avg output tokens": 56.0,
+      "cost $ (20 tickets)": 0.03819
+    },
+    {
+      "config": "Opus 5.5",
+      "objective (of 60)": 60,
+      "agrees with my labels (of 60)": 51,
+      "median s / ticket": 2.02,
+      "avg output tokens": 56.0,
+      "cost $ (20 tickets)": 0.07632
+    }
+  ],
+  "task_b": [
+    {
+      "config": "Haiku 4.5",
+      "worst (of 62)": 4,
+      "best (of 62)": 8,
+      "median s": 6.09,
+      "image+prompt tokens": 618.0,
+      "avg output tokens": 505.0,
+      "cost $ (3 runs)": 0.00942
+    },
+    {
+      "config": "Haiku 5.5",
+      "worst (of 62)": 54,
+      "best (of 62)": 62,
+      "median s": 8.04,
+      "image+prompt tokens": 718.0,
+      "avg output tokens": 1963.0,
+      "cost $ (3 runs)": 0.00316
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "worst (of 62)": 56,
+      "best (of 62)": 57,
+      "median s": 3.53,
+      "image+prompt tokens": 717.0,
+      "avg output tokens": 765.0,
+      "cost $ (3 runs)": 0.00136
+    },
+    {
+      "config": "Sonnet 5.5",
+      "worst (of 62)": 59,
+      "best (of 62)": 62,
+      "median s": 7.36,
+      "image+prompt tokens": 718.0,
+      "avg output tokens": 1364.0,
+      "cost $ (3 runs)": 0.04524
+    },
+    {
+      "config": "Opus 5.5",
+      "worst (of 62)": 62,
+      "best (of 62)": 62,
+      "median s": 10.56,
+      "image+prompt tokens": 718.0,
+      "avg output tokens": 1458.0,
+      "cost $ (3 runs)": 0.0961
+    }
+  ],
+  "task_c": [
+    {
+      "config": "Haiku 4.5",
+      "correct (of 30)": 4,
+      "median s / call": 2.6,
+      "input tokens": 8325.0,
+      "avg output tokens": 149.0,
+      "cost $ (3 runs)": 0.02721
+    },
+    {
+      "config": "Haiku 5.5",
+      "correct (of 30)": 30,
+      "median s / call": 38.88,
+      "input tokens": 10916.0,
+      "avg output tokens": 11295.0,
+      "cost $ (3 runs)": 0.02022
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "correct (of 30)": 5,
+      "median s / call": 1.59,
+      "input tokens": 10915.0,
+      "avg output tokens": 177.0,
+      "cost $ (3 runs)": 0.00354
+    },
+    {
+      "config": "Sonnet 5.5",
+      "correct (of 30)": 30,
+      "median s / call": 33.18,
+      "input tokens": 10916.0,
+      "avg output tokens": 5965.0,
+      "cost $ (3 runs)": 0.24444
+    },
+    {
+      "config": "Opus 5.5",
+      "correct (of 30)": 30,
+      "median s / call": 33.49,
+      "input tokens": 10916.0,
+      "avg output tokens": 4340.0,
+      "cost $ (3 runs)": 0.39139
+    }
+  ],
+  "catalog_misses": [
+    {
+      "config": "Haiku 4.5",
+      "q1": 3,
+      "q2": 0,
+      "q3": 0,
+      "q4": 0,
+      "q5": 0,
+      "q6": 1,
+      "q7": 0,
+      "q8": 0,
+      "q9": 0,
+      "q10": 0
+    },
+    {
+      "config": "Haiku 5.5",
+      "q1": 3,
+      "q2": 3,
+      "q3": 3,
+      "q4": 3,
+      "q5": 3,
+      "q6": 3,
+      "q7": 3,
+      "q8": 3,
+      "q9": 3,
+      "q10": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "q1": 3,
+      "q2": 0,
+      "q3": 0,
+      "q4": 1,
+      "q5": 0,
+      "q6": 0,
+      "q7": 1,
+      "q8": 0,
+      "q9": 0,
+      "q10": 0
+    },
+    {
+      "config": "Sonnet 5.5",
+      "q1": 3,
+      "q2": 3,
+      "q3": 3,
+      "q4": 3,
+      "q5": 3,
+      "q6": 3,
+      "q7": 3,
+      "q8": 3,
+      "q9": 3,
+      "q10": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "q1": 3,
+      "q2": 3,
+      "q3": 3,
+      "q4": 3,
+      "q5": 3,
+      "q6": 3,
+      "q7": 3,
+      "q8": 3,
+      "q9": 3,
+      "q10": 3
+    }
+  ],
+  "score": [
+    {
+      "config": "Haiku 4.5",
+      "tickets: objective (of 60)": 60,
+      "tickets: agrees with me (of 60)": 51,
+      "invoice 300x375 (of 62, worst-best)": "4-8",
+      "catalog (of 30)": 4,
+      "median s / ticket": 1.45,
+      "total cost $ (26 calls)": 0.0526,
+      "$ per 1,000 tickets": 0.8
+    },
+    {
+      "config": "Haiku 5.5",
+      "tickets: objective (of 60)": 60,
+      "tickets: agrees with me (of 60)": 52,
+      "invoice 300x375 (of 62, worst-best)": "54-62",
+      "catalog (of 30)": 30,
+      "median s / ticket": 1.57,
+      "total cost $ (26 calls)": 0.0253,
+      "$ per 1,000 tickets": 0.1
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "tickets: objective (of 60)": 60,
+      "tickets: agrees with me (of 60)": 53,
+      "invoice 300x375 (of 62, worst-best)": "56-57",
+      "catalog (of 30)": 5,
+      "median s / ticket": 1.53,
+      "total cost $ (26 calls)": 0.0068,
+      "$ per 1,000 tickets": 0.1
+    },
+    {
+      "config": "Sonnet 5.5",
+      "tickets: objective (of 60)": 60,
+      "tickets: agrees with me (of 60)": 52,
+      "invoice 300x375 (of 62, worst-best)": "59-62",
+      "catalog (of 30)": 30,
+      "median s / ticket": 1.74,
+      "total cost $ (26 calls)": 0.3279,
+      "$ per 1,000 tickets": 1.91
+    },
+    {
+      "config": "Opus 5.5",
+      "tickets: objective (of 60)": 60,
+      "tickets: agrees with me (of 60)": 51,
+      "invoice 300x375 (of 62, worst-best)": "62-62",
+      "catalog (of 30)": 30,
+      "median s / ticket": 2.02,
+      "total cost $ (26 calls)": 0.5638,
+      "$ per 1,000 tickets": 3.82
+    }
+  ],
+  "spent": 0.9763,
+  "tickets_raw": [
+    {
+      "config": "Haiku 4.5",
+      "seconds": 2.9828734580005403,
+      "input": 565,
+      "output": 59,
+      "cost": 0.00086,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.7134836250006629,
+      "input": 554,
+      "output": 43,
+      "cost": 0.000769,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.4946771659997466,
+      "input": 548,
+      "output": 45,
+      "cost": 0.000773,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.208921833000204,
+      "input": 559,
+      "output": 54,
+      "cost": 0.000829,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 0.8186033329984639,
+      "input": 557,
+      "output": 51,
+      "cost": 0.000812,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.4431869159998314,
+      "input": 550,
+      "output": 50,
+      "cost": 0.0008,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.4848864169998706,
+      "input": 555,
+      "output": 43,
+      "cost": 0.00077,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.5224863749990618,
+      "input": 576,
+      "output": 47,
+      "cost": 0.000811,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.4514856670011795,
+      "input": 543,
+      "output": 43,
+      "cost": 0.000758,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 0.8515805829993042,
+      "input": 564,
+      "output": 55,
+      "cost": 0.000839,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 0.8272462080003606,
+      "input": 552,
+      "output": 45,
+      "cost": 0.000777,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 0.785244042001068,
+      "input": 555,
+      "output": 41,
+      "cost": 0.00076,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.4864084999990155,
+      "input": 568,
+      "output": 46,
+      "cost": 0.000798,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 1
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.462393499999962,
+      "input": 554,
+      "output": 49,
+      "cost": 0.000799,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 0.7876524580005935,
+      "input": 549,
+      "output": 43,
+      "cost": 0.000764,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.5574834580002062,
+      "input": 546,
+      "output": 45,
+      "cost": 0.000771,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.432433541998762,
+      "input": 559,
+      "output": 52,
+      "cost": 0.000819,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.4521129589993507,
+      "input": 562,
+      "output": 49,
+      "cost": 0.000807,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 0.791041332999157,
+      "input": 558,
+      "output": 54,
+      "cost": 0.000828,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 1.4925884170006611,
+      "input": 557,
+      "output": 43,
+      "cost": 0.000772,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 4.694907666998915,
+      "input": 684,
+      "output": 67,
+      "cost": 0.00010190000000000001,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.6352576250010316,
+      "input": 684,
+      "output": 52,
+      "cost": 9.44e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.3081925000005867,
+      "input": 664,
+      "output": 52,
+      "cost": 9.240000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.596770000000106,
+      "input": 674,
+      "output": 63,
+      "cost": 9.89e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.3146864999998797,
+      "input": 668,
+      "output": 60,
+      "cost": 9.68e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.6157797079995362,
+      "input": 665,
+      "output": 62,
+      "cost": 9.75e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.5500697500010574,
+      "input": 672,
+      "output": 50,
+      "cost": 9.22e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.5979391250002664,
+      "input": 692,
+      "output": 74,
+      "cost": 0.0001062,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.5812241669991636,
+      "input": 654,
+      "output": 50,
+      "cost": 9.04e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 0.994172583999898,
+      "input": 681,
+      "output": 65,
+      "cost": 0.0001006,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.4444745000000694,
+      "input": 665,
+      "output": 52,
+      "cost": 9.25e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.6050083749996702,
+      "input": 673,
+      "output": 59,
+      "cost": 9.68e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.431894667000961,
+      "input": 682,
+      "output": 54,
+      "cost": 9.52e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.5807931669987738,
+      "input": 668,
+      "output": 57,
+      "cost": 9.53e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.405164916001013,
+      "input": 662,
+      "output": 50,
+      "cost": 9.120000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.3760682080010156,
+      "input": 660,
+      "output": 52,
+      "cost": 9.2e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.5867956669990235,
+      "input": 674,
+      "output": 59,
+      "cost": 9.690000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.560108499999842,
+      "input": 682,
+      "output": 57,
+      "cost": 9.67e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.5927555419984856,
+      "input": 674,
+      "output": 63,
+      "cost": 9.89e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 1.5497145000008459,
+      "input": 677,
+      "output": 50,
+      "cost": 9.27e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 2.664474416000303,
+      "input": 683,
+      "output": 70,
+      "cost": 0.0001033,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.6814514580000832,
+      "input": 683,
+      "output": 53,
+      "cost": 9.48e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.032223583000814,
+      "input": 663,
+      "output": 53,
+      "cost": 9.279999999999999e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.4627706669998588,
+      "input": 673,
+      "output": 66,
+      "cost": 0.0001003,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.5262039169992931,
+      "input": 667,
+      "output": 59,
+      "cost": 9.620000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.0362817919994995,
+      "input": 664,
+      "output": 61,
+      "cost": 9.690000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.4330070830001205,
+      "input": 671,
+      "output": 51,
+      "cost": 9.260000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.7392528330001369,
+      "input": 691,
+      "output": 71,
+      "cost": 0.00010460000000000001,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.5371270830000867,
+      "input": 653,
+      "output": 51,
+      "cost": 9.08e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.5330065420002938,
+      "input": 680,
+      "output": 64,
+      "cost": 0.0001,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.5359495840002637,
+      "input": 664,
+      "output": 53,
+      "cost": 9.290000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.3585377910003444,
+      "input": 672,
+      "output": 61,
+      "cost": 9.77e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.5823173750013666,
+      "input": 681,
+      "output": 56,
+      "cost": 9.61e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.0845389579990297,
+      "input": 667,
+      "output": 59,
+      "cost": 9.620000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.285812750000332,
+      "input": 661,
+      "output": 51,
+      "cost": 9.16e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.6026172079982643,
+      "input": 659,
+      "output": 53,
+      "cost": 9.240000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.567921292000392,
+      "input": 673,
+      "output": 62,
+      "cost": 9.829999999999999e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.5247178750014427,
+      "input": 681,
+      "output": 56,
+      "cost": 9.61e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.4265645830000722,
+      "input": 673,
+      "output": 66,
+      "cost": 0.0001003,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.4954852080009005,
+      "input": 676,
+      "output": 51,
+      "cost": 9.310000000000001e-05,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 5.459665458998643,
+      "input": 684,
+      "output": 67,
+      "cost": 0.002038,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.7896334590004699,
+      "input": 684,
+      "output": 52,
+      "cost": 0.001888,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.4456059170006483,
+      "input": 664,
+      "output": 52,
+      "cost": 0.001848,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.4207948330004,
+      "input": 674,
+      "output": 62,
+      "cost": 0.001968,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.7424674999983836,
+      "input": 668,
+      "output": 57,
+      "cost": 0.001906,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.4159242499990796,
+      "input": 665,
+      "output": 57,
+      "cost": 0.0019,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.6624496660006116,
+      "input": 672,
+      "output": 50,
+      "cost": 0.001844,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.8000373750001017,
+      "input": 692,
+      "output": 67,
+      "cost": 0.002054,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.7759927079987392,
+      "input": 654,
+      "output": 49,
+      "cost": 0.001798,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.744717124998715,
+      "input": 681,
+      "output": 63,
+      "cost": 0.001992,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.6204159160006384,
+      "input": 665,
+      "output": 52,
+      "cost": 0.00185,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.6631310420016234,
+      "input": 673,
+      "output": 59,
+      "cost": 0.001936,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.7341704589998699,
+      "input": 682,
+      "output": 54,
+      "cost": 0.001904,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 2.6133515000001353,
+      "input": 668,
+      "output": 57,
+      "cost": 0.001906,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.6978034579988162,
+      "input": 662,
+      "output": 52,
+      "cost": 0.001844,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 1
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.6759192919998895,
+      "input": 660,
+      "output": 52,
+      "cost": 0.00184,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.733050374999948,
+      "input": 674,
+      "output": 59,
+      "cost": 0.001938,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.9042383750002045,
+      "input": 682,
+      "output": 54,
+      "cost": 0.001904,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 1.8138952500012238,
+      "input": 674,
+      "output": 63,
+      "cost": 0.001978,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 2.308243916999345,
+      "input": 677,
+      "output": 50,
+      "cost": 0.001854,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 5.892363375000059,
+      "input": 684,
+      "output": 67,
+      "cost": 0.004076,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.9040482910004357,
+      "input": 684,
+      "output": 52,
+      "cost": 0.003776,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.6592332500003977,
+      "input": 664,
+      "output": 52,
+      "cost": 0.003696,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 3.1858799170004204,
+      "input": 674,
+      "output": 63,
+      "cost": 0.003956,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.204317124998852,
+      "input": 668,
+      "output": 56,
+      "cost": 0.003792,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.857633542000258,
+      "input": 665,
+      "output": 56,
+      "cost": 0.00378,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.157781249999971,
+      "input": 672,
+      "output": 50,
+      "cost": 0.003688,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.079299250000986,
+      "input": 692,
+      "output": 66,
+      "cost": 0.004088,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.0946953330003453,
+      "input": 654,
+      "output": 50,
+      "cost": 0.003616,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.0684382090003055,
+      "input": 681,
+      "output": 63,
+      "cost": 0.003984,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.6422882919996482,
+      "input": 665,
+      "output": 52,
+      "cost": 0.0037,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.7275104170003033,
+      "input": 673,
+      "output": 59,
+      "cost": 0.003872,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.7200322079988837,
+      "input": 682,
+      "output": 54,
+      "cost": 0.003808,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.8387578750007378,
+      "input": 668,
+      "output": 57,
+      "cost": 0.003812,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.148439958000381,
+      "input": 662,
+      "output": 51,
+      "cost": 0.003668,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.968415790999643,
+      "input": 660,
+      "output": 52,
+      "cost": 0.00368,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 2.1371087499992427,
+      "input": 674,
+      "output": 59,
+      "cost": 0.003876,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.7943179169997165,
+      "input": 682,
+      "output": 54,
+      "cost": 0.003808,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.8015545829985058,
+      "input": 674,
+      "output": 62,
+      "cost": 0.003936,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 1.846222083999237,
+      "input": 677,
+      "output": 50,
+      "cost": 0.003708,
+      "stop": "end_turn",
+      "objective": 3,
+      "judgement": 3
+    }
+  ],
+  "invoice_raw": [
+    {
+      "config": "Haiku 4.5",
+      "seconds": 7.496889582998847,
+      "input": 618,
+      "output": 567,
+      "cost": 0.003453,
+      "stop": "end_turn",
+      "correct": 5,
+      "run": 1
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 6.091616625000825,
+      "input": 618,
+      "output": 559,
+      "cost": 0.003413,
+      "stop": "end_turn",
+      "correct": 8,
+      "run": 2
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 4.699057624999114,
+      "input": 618,
+      "output": 388,
+      "cost": 0.002558,
+      "stop": "end_turn",
+      "correct": 4,
+      "run": 3
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 7.089452332998917,
+      "input": 718,
+      "output": 1653,
+      "cost": 0.0008983,
+      "stop": "end_turn",
+      "correct": 54,
+      "run": 1
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 8.043699542000468,
+      "input": 718,
+      "output": 2044,
+      "cost": 0.0010938,
+      "stop": "end_turn",
+      "correct": 55,
+      "run": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 8.642934083,
+      "input": 718,
+      "output": 2191,
+      "cost": 0.0011673,
+      "stop": "end_turn",
+      "correct": 62,
+      "run": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 3.5330629590007447,
+      "input": 717,
+      "output": 765,
+      "cost": 0.0004542,
+      "stop": "end_turn",
+      "correct": 57,
+      "run": 1
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 3.5535702500001207,
+      "input": 717,
+      "output": 765,
+      "cost": 0.0004542,
+      "stop": "end_turn",
+      "correct": 56,
+      "run": 2
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 3.317558832999566,
+      "input": 717,
+      "output": 765,
+      "cost": 0.0004542,
+      "stop": "end_turn",
+      "correct": 57,
+      "run": 3
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 8.441081708000638,
+      "input": 718,
+      "output": 1388,
+      "cost": 0.015316,
+      "stop": "end_turn",
+      "correct": 59,
+      "run": 1
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 7.084169959000064,
+      "input": 718,
+      "output": 1314,
+      "cost": 0.014576,
+      "stop": "end_turn",
+      "correct": 62,
+      "run": 2
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 7.364607458001046,
+      "input": 718,
+      "output": 1391,
+      "cost": 0.015346,
+      "stop": "end_turn",
+      "correct": 59,
+      "run": 3
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 11.794586083000468,
+      "input": 718,
+      "output": 1461,
+      "cost": 0.032092,
+      "stop": "end_turn",
+      "correct": 62,
+      "run": 1
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 10.546797375000097,
+      "input": 718,
+      "output": 1452,
+      "cost": 0.031912,
+      "stop": "end_turn",
+      "correct": 62,
+      "run": 2
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 10.557744542000364,
+      "input": 718,
+      "output": 1461,
+      "cost": 0.032092,
+      "stop": "end_turn",
+      "correct": 62,
+      "run": 3
+    }
+  ],
+  "catalog_raw": [
+    {
+      "config": "Haiku 4.5",
+      "seconds": 3.6652669579998474,
+      "input": 8325,
+      "output": 162,
+      "cost": 0.009135,
+      "stop": "end_turn",
+      "run": 1,
+      "q1": true,
+      "q2": false,
+      "q3": false,
+      "q4": false,
+      "q5": false,
+      "q6": false,
+      "q7": false,
+      "q8": false,
+      "q9": false,
+      "q10": false,
+      "correct": 1
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 2.603569625000091,
+      "input": 8325,
+      "output": 162,
+      "cost": 0.009135,
+      "stop": "end_turn",
+      "run": 2,
+      "q1": true,
+      "q2": false,
+      "q3": false,
+      "q4": false,
+      "q5": false,
+      "q6": false,
+      "q7": false,
+      "q8": false,
+      "q9": false,
+      "q10": false,
+      "correct": 1
+    },
+    {
+      "config": "Haiku 4.5",
+      "seconds": 2.1691622079997614,
+      "input": 8325,
+      "output": 123,
+      "cost": 0.00894,
+      "stop": "end_turn",
+      "run": 3,
+      "q1": true,
+      "q2": false,
+      "q3": false,
+      "q4": false,
+      "q5": false,
+      "q6": true,
+      "q7": false,
+      "q8": false,
+      "q9": false,
+      "q10": false,
+      "correct": 2
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 38.88029387499955,
+      "input": 10916,
+      "output": 10450,
+      "cost": 0.0063166,
+      "stop": "end_turn",
+      "run": 1,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 37.58134387500104,
+      "input": 10916,
+      "output": 10561,
+      "cost": 0.0063721,
+      "stop": "end_turn",
+      "run": 2,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Haiku 5.5",
+      "seconds": 47.709756375001234,
+      "input": 10916,
+      "output": 12874,
+      "cost": 0.007528600000000001,
+      "stop": "end_turn",
+      "run": 3,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 2.0706624159993225,
+      "input": 10915,
+      "output": 177,
+      "cost": 0.00118,
+      "stop": "end_turn",
+      "run": 1,
+      "q1": true,
+      "q2": false,
+      "q3": false,
+      "q4": false,
+      "q5": false,
+      "q6": false,
+      "q7": false,
+      "q8": false,
+      "q9": false,
+      "q10": false,
+      "correct": 1
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.59054154200021,
+      "input": 10915,
+      "output": 176,
+      "cost": 0.0011795,
+      "stop": "end_turn",
+      "run": 2,
+      "q1": true,
+      "q2": false,
+      "q3": false,
+      "q4": true,
+      "q5": false,
+      "q6": false,
+      "q7": true,
+      "q8": false,
+      "q9": false,
+      "q10": false,
+      "correct": 3
+    },
+    {
+      "config": "Haiku 5.5, thinking off",
+      "seconds": 1.3836801670004206,
+      "input": 10915,
+      "output": 178,
+      "cost": 0.0011805,
+      "stop": "end_turn",
+      "run": 3,
+      "q1": true,
+      "q2": false,
+      "q3": false,
+      "q4": false,
+      "q5": false,
+      "q6": false,
+      "q7": false,
+      "q8": false,
+      "q9": false,
+      "q10": false,
+      "correct": 1
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 27.8152326670006,
+      "input": 10916,
+      "output": 4972,
+      "cost": 0.071552,
+      "stop": "end_turn",
+      "run": 1,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 33.693858292001096,
+      "input": 10916,
+      "output": 6534,
+      "cost": 0.087172,
+      "stop": "end_turn",
+      "run": 2,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Sonnet 5.5",
+      "seconds": 33.1777560419996,
+      "input": 10916,
+      "output": 6388,
+      "cost": 0.085712,
+      "stop": "end_turn",
+      "run": 3,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 33.24466733400004,
+      "input": 10916,
+      "output": 4229,
+      "cost": 0.128244,
+      "stop": "end_turn",
+      "run": 1,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 33.58157870800096,
+      "input": 10916,
+      "output": 4470,
+      "cost": 0.133064,
+      "stop": "end_turn",
+      "run": 2,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    },
+    {
+      "config": "Opus 5.5",
+      "seconds": 33.49149291700087,
+      "input": 10916,
+      "output": 4321,
+      "cost": 0.130084,
+      "stop": "end_turn",
+      "run": 3,
+      "q1": true,
+      "q2": true,
+      "q3": true,
+      "q4": true,
+      "q5": true,
+      "q6": true,
+      "q7": true,
+      "q8": true,
+      "q9": true,
+      "q10": true,
+      "correct": 10
+    }
+  ]
+}

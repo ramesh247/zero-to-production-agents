@@ -93,3 +93,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | Your pipeline processes 100,000 invoices a month. Where does the money go? |
 | Senior | Why does the notebook turn thinking off? |
 | Senior | A user uploads a photo of a receipt taken at an angle in bad light. What breaks first? |
+
+## 08 · Choosing a model ([full pack](08-choosing-a-model/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Is the most expensive model the most accurate? |
+| Mid ⭐ | The cheapest model tied the most expensive one on counting questions. Then you changed one setting and it scored 5/30. What changed? |
+| Mid | What did that thinking cost? |
+| Mid | A bigger model will agree with your labels more often, right? |
+| Senior | You need to read small images reliably. Do you pay for Opus? |
+| Senior | Why did Haiku 4.5 use 8,325 input tokens for the catalog and the others 10,916? |
+| Senior | The catalog feature has a 3-second latency budget. Which model do you pick? |
+| Senior | How would you choose a model for a new feature? |

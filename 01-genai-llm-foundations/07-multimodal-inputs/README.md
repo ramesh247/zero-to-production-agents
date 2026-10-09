@@ -49,9 +49,9 @@ Below 400×500 the model still returned 20 well-formed lines and finished normal
 - `.env.example`: copy to `.env` and add your key (`.env` is git-ignored)
 - [`INTERVIEW.md`](INTERVIEW.md): 8 interview questions with trap answers, real answers and follow-ups
 
-**Model:** from this build the series uses Claude Haiku 5.5. Builds 03-06 stay on Claude Haiku 4.5, so their published numbers still reproduce. [08 · Choosing a model](../README.md) compares the two and the bigger models.
+**Model:** from this build the series uses Claude Haiku 5.5. Builds 03-06 stay on Claude Haiku 4.5, so their published numbers still reproduce. [08 · Choosing a model](../08-choosing-a-model/) compares the two and the bigger models.
 
 **Builds on:** [04 · Reliable JSON](../04-structured-outputs/) and [05 · Context windows and cost](../05-context-windows-and-cost/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [08 · Choosing a model](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [08 · Choosing a model](../08-choosing-a-model/).

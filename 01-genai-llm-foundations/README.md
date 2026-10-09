@@ -11,6 +11,6 @@ Part 1 of [Zero to Production Agents](../README.md).
 | 05 | [Context windows, tokens and what your prompt really costs](05-context-windows-and-cost/) | notebook | ✅ [interview pack](05-context-windows-and-cost/INTERVIEW.md) |
 | 06 | [Prompt caching: cut latency and cost on repeated context](06-prompt-caching/) | notebook | ✅ [interview pack](06-prompt-caching/INTERVIEW.md) |
 | 07 | [Beyond text: images and PDFs as LLM input](07-multimodal-inputs/) | notebook | ✅ [interview pack](07-multimodal-inputs/INTERVIEW.md) |
-| 08 | Choosing a model: quality vs latency vs cost benchmark | notebook | coming soon |
+| 08 | [Choosing a model: quality vs latency vs cost benchmark](08-choosing-a-model/) | notebook | ✅ [interview pack](08-choosing-a-model/INTERVIEW.md) |
 
 All interview questions for this track, one section per project: [INTERVIEW-PREP.md](INTERVIEW-PREP.md)
