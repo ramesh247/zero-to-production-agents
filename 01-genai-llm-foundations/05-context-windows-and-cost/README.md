@@ -44,4 +44,4 @@ jupyter notebook notebook.ipynb
 **Builds on:** [01 · Tokens](../01-tokens-and-embeddings/) and [04 · Reliable JSON](../04-structured-outputs/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [06 · Prompt caching](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [06 · Prompt caching](../06-prompt-caching/).

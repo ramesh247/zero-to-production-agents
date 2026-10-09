@@ -67,3 +67,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | The model has a 200K-token context window. Can you just paste in all your tickets? |
 | Senior | Two chat answers came back exactly 400 tokens long. Coincidence? |
 | Senior | A sliding window saved 61% of input tokens. What did it cost you? |
+
+## 06 · Prompt caching ([full pack](06-prompt-caching/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | You added `cache_control` and nothing changed. Why? |
+| Junior | Is the first cached request cheaper? |
+| Mid ⭐ | You put the current time at the top of your system prompt. What does that do to caching? |
+| Mid | How much did caching save on 10 questions? |
+| Mid | Does prompt caching make responses faster? |
+| Senior | What exactly gets cached, and where do you put the breakpoint? |
+| Senior | Your app sends the same prompt once every 10 minutes. Should you cache it? |
+| Senior | Why does the notebook put a random run id at the start of the system prompt? |
