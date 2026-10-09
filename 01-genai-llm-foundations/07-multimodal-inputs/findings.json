@@ -1,0 +1,479 @@
+{
+  "model": "claude-haiku-5-5",
+  "sdk": "1.13.0",
+  "thinking": "disabled",
+  "invoice": {
+    "lines": 20,
+    "total": 4995.41,
+    "fields": 62
+  },
+  "image_runs": [
+    {
+      "size": "2400x3000",
+      "long edge": 3000,
+      "run": 1,
+      "input tokens": 5337,
+      "counted": 4820,
+      "correct (of 62)": 62,
+      "seconds": 3.19,
+      "cost $": 0.0009162
+    },
+    {
+      "size": "2400x3000",
+      "long edge": 3000,
+      "run": 2,
+      "input tokens": 5337,
+      "counted": 4820,
+      "correct (of 62)": 62,
+      "seconds": 3.1,
+      "cost $": 0.0009162
+    },
+    {
+      "size": "2400x3000",
+      "long edge": 3000,
+      "run": 3,
+      "input tokens": 5337,
+      "counted": 4820,
+      "correct (of 62)": 62,
+      "seconds": 3.03,
+      "cost $": 0.0009162
+    },
+    {
+      "size": "1200x1500",
+      "long edge": 1500,
+      "run": 1,
+      "input tokens": 2885,
+      "counted": 2368,
+      "correct (of 62)": 62,
+      "seconds": 3.58,
+      "cost $": 0.000671
+    },
+    {
+      "size": "1200x1500",
+      "long edge": 1500,
+      "run": 2,
+      "input tokens": 2885,
+      "counted": 2368,
+      "correct (of 62)": 62,
+      "seconds": 3.22,
+      "cost $": 0.000671
+    },
+    {
+      "size": "1200x1500",
+      "long edge": 1500,
+      "run": 3,
+      "input tokens": 2885,
+      "counted": 2368,
+      "correct (of 62)": 62,
+      "seconds": 3.28,
+      "cost $": 0.000671
+    },
+    {
+      "size": "800x1000",
+      "long edge": 1000,
+      "run": 1,
+      "input tokens": 1607,
+      "counted": 1090,
+      "correct (of 62)": 62,
+      "seconds": 3.33,
+      "cost $": 0.0005432000000000001
+    },
+    {
+      "size": "800x1000",
+      "long edge": 1000,
+      "run": 2,
+      "input tokens": 1607,
+      "counted": 1090,
+      "correct (of 62)": 62,
+      "seconds": 3.59,
+      "cost $": 0.0005937000000000001
+    },
+    {
+      "size": "800x1000",
+      "long edge": 1000,
+      "run": 3,
+      "input tokens": 1607,
+      "counted": 1090,
+      "correct (of 62)": 62,
+      "seconds": 3.29,
+      "cost $": 0.0005432000000000001
+    },
+    {
+      "size": "600x750",
+      "long edge": 750,
+      "run": 1,
+      "input tokens": 1157,
+      "counted": 640,
+      "correct (of 62)": 62,
+      "seconds": 3.28,
+      "cost $": 0.0004982
+    },
+    {
+      "size": "600x750",
+      "long edge": 750,
+      "run": 2,
+      "input tokens": 1157,
+      "counted": 640,
+      "correct (of 62)": 62,
+      "seconds": 3.3,
+      "cost $": 0.0004982
+    },
+    {
+      "size": "600x750",
+      "long edge": 750,
+      "run": 3,
+      "input tokens": 1157,
+      "counted": 640,
+      "correct (of 62)": 62,
+      "seconds": 3.25,
+      "cost $": 0.0004982
+    },
+    {
+      "size": "400x500",
+      "long edge": 500,
+      "run": 1,
+      "input tokens": 833,
+      "counted": 316,
+      "correct (of 62)": 62,
+      "seconds": 2.94,
+      "cost $": 0.0004658
+    },
+    {
+      "size": "400x500",
+      "long edge": 500,
+      "run": 2,
+      "input tokens": 833,
+      "counted": 316,
+      "correct (of 62)": 62,
+      "seconds": 2.82,
+      "cost $": 0.0004658
+    },
+    {
+      "size": "400x500",
+      "long edge": 500,
+      "run": 3,
+      "input tokens": 833,
+      "counted": 316,
+      "correct (of 62)": 62,
+      "seconds": 3.55,
+      "cost $": 0.0004658
+    },
+    {
+      "size": "300x375",
+      "long edge": 375,
+      "run": 1,
+      "input tokens": 717,
+      "counted": 200,
+      "correct (of 62)": 57,
+      "seconds": 3.27,
+      "cost $": 0.0004542
+    },
+    {
+      "size": "300x375",
+      "long edge": 375,
+      "run": 2,
+      "input tokens": 717,
+      "counted": 200,
+      "correct (of 62)": 56,
+      "seconds": 3.48,
+      "cost $": 0.0004542
+    },
+    {
+      "size": "300x375",
+      "long edge": 375,
+      "run": 3,
+      "input tokens": 717,
+      "counted": 200,
+      "correct (of 62)": 56,
+      "seconds": 3.42,
+      "cost $": 0.0004542
+    },
+    {
+      "size": "240x300",
+      "long edge": 300,
+      "run": 1,
+      "input tokens": 662,
+      "counted": 145,
+      "correct (of 62)": 21,
+      "seconds": 4.43,
+      "cost $": 0.0004992
+    },
+    {
+      "size": "240x300",
+      "long edge": 300,
+      "run": 2,
+      "input tokens": 662,
+      "counted": 145,
+      "correct (of 62)": 22,
+      "seconds": 4.36,
+      "cost $": 0.0004997
+    },
+    {
+      "size": "240x300",
+      "long edge": 300,
+      "run": 3,
+      "input tokens": 662,
+      "counted": 145,
+      "correct (of 62)": 22,
+      "seconds": 4.3,
+      "cost $": 0.0004997
+    },
+    {
+      "size": "200x250",
+      "long edge": 250,
+      "run": 1,
+      "input tokens": 635,
+      "counted": 118,
+      "correct (of 62)": 5,
+      "seconds": 4.44,
+      "cost $": 0.000499
+    },
+    {
+      "size": "200x250",
+      "long edge": 250,
+      "run": 2,
+      "input tokens": 635,
+      "counted": 118,
+      "correct (of 62)": 2,
+      "seconds": 4.16,
+      "cost $": 0.000449
+    },
+    {
+      "size": "200x250",
+      "long edge": 250,
+      "run": 3,
+      "input tokens": 635,
+      "counted": 118,
+      "correct (of 62)": 3,
+      "seconds": 4.17,
+      "cost $": 0.0004505
+    }
+  ],
+  "image_summary": [
+    {
+      "long edge": 3000,
+      "size": "2400x3000",
+      "input_tokens": 5337,
+      "correct_min": 62,
+      "correct_max": 62,
+      "cost_per_call": 0.000916
+    },
+    {
+      "long edge": 1500,
+      "size": "1200x1500",
+      "input_tokens": 2885,
+      "correct_min": 62,
+      "correct_max": 62,
+      "cost_per_call": 0.000671
+    },
+    {
+      "long edge": 1000,
+      "size": "800x1000",
+      "input_tokens": 1607,
+      "correct_min": 62,
+      "correct_max": 62,
+      "cost_per_call": 0.00056
+    },
+    {
+      "long edge": 750,
+      "size": "600x750",
+      "input_tokens": 1157,
+      "correct_min": 62,
+      "correct_max": 62,
+      "cost_per_call": 0.000498
+    },
+    {
+      "long edge": 500,
+      "size": "400x500",
+      "input_tokens": 833,
+      "correct_min": 62,
+      "correct_max": 62,
+      "cost_per_call": 0.000466
+    },
+    {
+      "long edge": 375,
+      "size": "300x375",
+      "input_tokens": 717,
+      "correct_min": 56,
+      "correct_max": 57,
+      "cost_per_call": 0.000454
+    },
+    {
+      "long edge": 300,
+      "size": "240x300",
+      "input_tokens": 662,
+      "correct_min": 21,
+      "correct_max": 22,
+      "cost_per_call": 0.0005
+    },
+    {
+      "long edge": 250,
+      "size": "200x250",
+      "input_tokens": 635,
+      "correct_min": 2,
+      "correct_max": 5,
+      "cost_per_call": 0.000466
+    }
+  ],
+  "small": {
+    "size": "300x375",
+    "correct": 59,
+    "total_read": 4995.41,
+    "lines_returned": 20,
+    "examples": [
+      {
+        "item": "USB-C cable 2m",
+        "true unit price": 90.15,
+        "read at 300x375": 90.1
+      },
+      {
+        "item": "HDMI adapter",
+        "true unit price": 62.54,
+        "read at 300x375": 62.64
+      },
+      {
+        "item": "Wireless mouse",
+        "true unit price": 78.38,
+        "read at 300x375": 78.38
+      },
+      {
+        "item": "Laptop stand",
+        "true unit price": 36.01,
+        "read at 300x375": 36.01
+      },
+      {
+        "item": "Webcam 1080p",
+        "true unit price": 86.6,
+        "read at 300x375": 86.6
+      },
+      {
+        "item": "Ethernet switch 8-port",
+        "true unit price": 5.49,
+        "read at 300x375": 5.49
+      },
+      {
+        "item": "Monitor arm",
+        "true unit price": 40.89,
+        "read at 300x375": 40.89
+      },
+      {
+        "item": "Keyboard wrist rest",
+        "true unit price": 10.44,
+        "read at 300x375": 10.44
+      }
+    ]
+  },
+  "pdf_extracted_chars": 294,
+  "pdf_runs": [
+    {
+      "mode": "extracted text",
+      "input tokens": 678,
+      "seconds": 1.56,
+      "cost $": 0.0001223,
+      "revenue": "correct",
+      "growth": "correct",
+      "headcount": "correct",
+      "churn": "correct",
+      "aug": "null",
+      "sep": "null",
+      "west": "null",
+      "south": "null"
+    },
+    {
+      "mode": "extracted text",
+      "input tokens": 678,
+      "seconds": 1.54,
+      "cost $": 0.0001223,
+      "revenue": "correct",
+      "growth": "correct",
+      "headcount": "correct",
+      "churn": "correct",
+      "aug": "null",
+      "sep": "null",
+      "west": "null",
+      "south": "null"
+    },
+    {
+      "mode": "extracted text",
+      "input tokens": 678,
+      "seconds": 1.48,
+      "cost $": 0.0001223,
+      "revenue": "correct",
+      "growth": "correct",
+      "headcount": "correct",
+      "churn": "correct",
+      "aug": "null",
+      "sep": "null",
+      "west": "null",
+      "south": "null"
+    },
+    {
+      "mode": "native PDF",
+      "input tokens": 5413,
+      "seconds": 1.61,
+      "cost $": 0.0005988,
+      "revenue": "correct",
+      "growth": "correct",
+      "headcount": "correct",
+      "churn": "correct",
+      "aug": "correct",
+      "sep": "correct",
+      "west": "correct",
+      "south": "correct"
+    },
+    {
+      "mode": "native PDF",
+      "input tokens": 5413,
+      "seconds": 1.29,
+      "cost $": 0.0005988,
+      "revenue": "correct",
+      "growth": "correct",
+      "headcount": "correct",
+      "churn": "correct",
+      "aug": "correct",
+      "sep": "correct",
+      "west": "correct",
+      "south": "correct"
+    },
+    {
+      "mode": "native PDF",
+      "input tokens": 5413,
+      "seconds": 1.61,
+      "cost $": 0.0005988,
+      "revenue": "correct",
+      "growth": "correct",
+      "headcount": "correct",
+      "churn": "correct",
+      "aug": "correct",
+      "sep": "correct",
+      "west": "correct",
+      "south": "correct"
+    }
+  ],
+  "pdf_summary": [
+    {
+      "mode": "extracted text",
+      "input tokens": 678,
+      "cost per call $": 0.000122,
+      "median seconds": 1.54,
+      "text Qs correct": 12,
+      "text Qs null": 0,
+      "text Qs wrong": 0,
+      "picture Qs correct": 0,
+      "picture Qs null": 12,
+      "picture Qs wrong": 0
+    },
+    {
+      "mode": "native PDF",
+      "input tokens": 5413,
+      "cost per call $": 0.000599,
+      "median seconds": 1.61,
+      "text Qs correct": 12,
+      "text Qs null": 0,
+      "text Qs wrong": 0,
+      "picture Qs correct": 12,
+      "picture Qs null": 0,
+      "picture Qs wrong": 0
+    }
+  ]
+}

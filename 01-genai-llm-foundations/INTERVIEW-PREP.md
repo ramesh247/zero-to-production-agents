@@ -80,3 +80,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | What exactly gets cached, and where do you put the breakpoint? |
 | Senior | Your app sends the same prompt once every 10 minutes. Should you cache it? |
 | Senior | Why does the notebook put a random run id at the start of the system prompt? |
+
+## 07 · Images and PDFs as LLM input ([full pack](07-multimodal-inputs/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | How many tokens does an image cost? |
+| Junior ⭐ | Should you send images at full resolution so the model can read them? |
+| Mid | The image was too small to read. What did the model do? |
+| Mid | You extract a PDF's text with a library and send that. What do you lose? |
+| Mid | What changes when you send the PDF itself instead? |
+| Senior | Your pipeline processes 100,000 invoices a month. Where does the money go? |
+| Senior | Why does the notebook turn thinking off? |
+| Senior | A user uploads a photo of a receipt taken at an angle in bad light. What breaks first? |

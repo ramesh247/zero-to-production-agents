@@ -54,4 +54,4 @@ The 52K test is 5 calls each way and single uncached calls ranged from 0.43 s to
 **Builds on:** [05 · Context windows and cost](../05-context-windows-and-cost/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [07 · Images and PDFs as input](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [07 · Images and PDFs as input](../07-multimodal-inputs/).
