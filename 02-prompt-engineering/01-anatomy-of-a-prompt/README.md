@@ -46,4 +46,4 @@ jupyter notebook notebook.ipynb
 **Builds on:** the tickets from [04 · Reliable JSON](../../01-genai-llm-foundations/04-structured-outputs/) and the model choice from [08 · Choosing a model](../../01-genai-llm-foundations/08-choosing-a-model/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [02 · Zero-shot vs few-shot](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [02 · Zero-shot vs few-shot](../02-zero-vs-few-shot/).

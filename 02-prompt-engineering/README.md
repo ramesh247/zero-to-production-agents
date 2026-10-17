@@ -5,7 +5,7 @@ Part 2 of [Zero to Production Agents](../README.md).
 | # | Project | Type | Status |
 |---|---|---|---|
 | 01 | [Anatomy of a production prompt: role, context, task, format](01-anatomy-of-a-prompt/) | notebook | ✅ [interview pack](01-anatomy-of-a-prompt/INTERVIEW.md) |
-| 02 | Zero-shot vs few-shot: when examples actually help | notebook | coming soon |
+| 02 | [Zero-shot vs few-shot: when examples actually help](02-zero-vs-few-shot/) | notebook | ✅ [interview pack](02-zero-vs-few-shot/INTERVIEW.md) |
 | 03 | Chain-of-thought and extended thinking, measured | notebook | coming soon |
 | 04 | Structuring prompts with XML tags and output templates | notebook | coming soon |
 | 05 | Prompt chaining: break one hard prompt into three easy ones | notebook | coming soon |
