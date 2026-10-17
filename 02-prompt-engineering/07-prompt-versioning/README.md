@@ -56,4 +56,4 @@ The whole demo, commands and output, is in [`results/demo.txt`](results/demo.txt
 **Builds on:** [06 · Eval-driven prompting](../06-eval-driven-prompting/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [08 · 7 prompt anti-patterns](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [08 · 7 prompt anti-patterns](../08-prompt-anti-patterns/).

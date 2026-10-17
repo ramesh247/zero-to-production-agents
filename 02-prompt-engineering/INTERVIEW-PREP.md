@@ -92,3 +92,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | You have a score gate. Why also test specific "golden" tickets? |
 | Senior | The provider releases a new model version. What happens to your tests? |
 | Senior | Why not just compare the new prompt with a fresh run of the old one? |
+
+## 08 · 7 prompt anti-patterns ([full pack](08-prompt-anti-patterns/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Which anti-pattern did the most damage? |
+| Mid ⭐ | Your format example used single quotes and a trailing comma. Does it matter if the instruction says "JSON"? |
+| Mid | Does writing IMPORTANT in capitals make the model follow the rule? |
+| Mid | The system prompt says "under 50 words", the request says "in detail". What happens? |
+| Mid | Is "Don't use markdown" a bad instruction? |
+| Senior | You pasted 10,000 tokens of "context, just in case". Did accuracy drop? |
+| Senior | You ask the model for a 0-100 confidence and auto-accept anything above 90. Safe? |
+| Senior | Of the 7, which would you fix first in a real codebase? |

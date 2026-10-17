@@ -1,0 +1,114 @@
+{
+  "model": "claude-haiku-5-5",
+  "sdk": "1.15.0",
+  "thinking": "disabled",
+  "results": {
+    "1. vague task": {
+      "anti-pattern": {
+        "usable %": 2,
+        "all 3 right %": 0,
+        "avg output tokens": 362,
+        "$ per 1,000 tickets": 0.185
+      },
+      "fix": {
+        "usable %": 100,
+        "all 3 right %": 90,
+        "avg output tokens": 30,
+        "$ per 1,000 tickets": 0.085
+      }
+    },
+    "2. conflicting instructions": {
+      "anti-pattern": {
+        "under 50 words %": 67,
+        "median words": 47,
+        "max words": 83,
+        "$ per 1,000 tickets": 0.054
+      },
+      "fix": {
+        "under 50 words %": 82,
+        "median words": 43,
+        "max words": 56,
+        "$ per 1,000 tickets": 0.05
+      }
+    },
+    "3. SHOUTING": {
+      "anti-pattern": {
+        "usable %": 100,
+        "all 3 right %": 85,
+        "avg output tokens": 30,
+        "$ per 1,000 tickets": 0.089
+      },
+      "fix": {
+        "usable %": 100,
+        "all 3 right %": 90,
+        "avg output tokens": 30,
+        "$ per 1,000 tickets": 0.085
+      }
+    },
+    "4. only saying what not to do": {
+      "no instruction": {
+        "replies with markdown %": 20,
+        "median words": 89
+      },
+      "anti-pattern": {
+        "replies with markdown %": 5,
+        "median words": 90
+      },
+      "fix": {
+        "replies with markdown %": 0,
+        "median words": 78
+      }
+    },
+    "5. broken format example": {
+      "anti-pattern": {
+        "usable %": 25,
+        "all 3 right %": 23,
+        "avg output tokens": 33,
+        "$ per 1,000 tickets": 0.082
+      },
+      "fix": {
+        "usable %": 100,
+        "all 3 right %": 90,
+        "avg output tokens": 30,
+        "$ per 1,000 tickets": 0.08
+      }
+    },
+    "6. padding with unrelated context": {
+      "anti-pattern": {
+        "usable %": 100,
+        "all 3 right %": 90,
+        "avg output tokens": 29,
+        "$ per 1,000 tickets": 1.113,
+        "input tokens": 10983
+      },
+      "fix": {
+        "usable %": 100,
+        "all 3 right %": 90,
+        "avg output tokens": 30,
+        "$ per 1,000 tickets": 0.085,
+        "input tokens": 698
+      }
+    },
+    "7. trusting confidence": {
+      "anti-pattern": {
+        "all 3 right %": 89,
+        "avg confidence when right": 88.5,
+        "avg confidence when wrong": 82.5,
+        "wrong answers with confidence >= 90": "0/6",
+        "right answers with confidence >= 90": "18/50"
+      }
+    }
+  },
+  "cost_total": 0.1253,
+  "confidence_counts": {
+    "70.0": 1,
+    "80.0": 8,
+    "85.0": 12,
+    "88.0": 17,
+    "90.0": 3,
+    "92.0": 1,
+    "93.0": 1,
+    "95.0": 10,
+    "97.0": 3
+  }
+}

@@ -59,7 +59,7 @@ using **Claude Haiku 5.5** with thinking off on build #014's 20 test tickets, 3 
 
 ### 7. The provider releases a new model version. What happens to your tests? · Senior
 - **Trap:** "Nothing. The prompts didn't change."
-- **Answer:** The model id is part of the snapshot key, so changing `MODEL` invalidates every snapshot, and replay fails until you record again. That's on purpose: a model change is a change to every prompt at once. (Not run in this demo; it's how the key is built in `src/llm.py`.)
+- **Answer:** The model id is part of the snapshot key, so changing `MODEL` invalidates every snapshot, and replay fails until you record again. That's on purpose: a model change is a change to every prompt at once. Checked by changing the model name in a copy of the repo: **5 failed, 4 passed** (the 4 lock-file tests don't depend on the model). Nothing was recorded on a real new model.
 - **Follow-up:** How would you roll it out?
 - **Follow-up answer:** Record every current prompt on the new model, compare each with its replayed baseline, and treat any gate failure as a prompt you need to re-tune for that model (build #008 showed models differ per task).
 - Code: [src/llm.py](src/llm.py)

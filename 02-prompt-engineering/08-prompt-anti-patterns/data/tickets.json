@@ -1,0 +1,205 @@
+{
+ "note": "test: build #014's 20 test tickets (labelled with rubric v3 before any model run).",
+ "fields": {
+  "category": [
+   "billing",
+   "bug",
+   "account",
+   "shipping",
+   "feature_request"
+  ],
+  "priority": [
+   "low",
+   "medium",
+   "high",
+   "urgent"
+  ],
+  "sentiment": [
+   "negative",
+   "neutral",
+   "positive"
+  ]
+ },
+ "test": [
+  {
+   "id": 401,
+   "text": "Since the update, no one in our office can log in. We have 40 people waiting.",
+   "label": {
+    "category": "account",
+    "priority": "urgent",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 402,
+   "text": "I was charged for express shipping on ORD-77310 but it came standard. Can I get the difference back?",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 403,
+   "text": "Your support team is amazing, thanks for fixing my order ORD-22014 so fast!",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   }
+  },
+  {
+   "id": 404,
+   "text": "The 'forgot password' link goes to a 404 page, so I can't get into my account.",
+   "label": {
+    "category": "account",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 405,
+   "text": "Would love a way to schedule reports to arrive every Monday.",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 406,
+   "text": "Parcel ORD-60331 says 'out for delivery' since Friday. Any news?",
+   "label": {
+    "category": "shipping",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 407,
+   "text": "The invoice PDF shows last year's address. Our finance team needs it fixed before month-end close tomorrow.",
+   "label": {
+    "category": "bug",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 408,
+   "text": "Someone changed my password and my email address. I didn't do this!",
+   "label": {
+    "category": "account",
+    "priority": "urgent",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 409,
+   "text": "Cancel my subscription please. Thanks.",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 410,
+   "text": "Dark mode doesn't remember my choice after I log out. Minor, but a bit annoying.",
+   "label": {
+    "category": "bug",
+    "priority": "medium",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 411,
+   "text": "How long does standard shipping take to Canada?",
+   "label": {
+    "category": "shipping",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 412,
+   "text": "I received two keyboards but only ordered one (ORD-48820). How do I send one back?",
+   "label": {
+    "category": "shipping",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 413,
+   "text": "Charged three times for ORD-51290!! Fix this now.",
+   "label": {
+    "category": "billing",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 414,
+   "text": "The app freezes on the checkout screen on my Android phone. Works on my laptop.",
+   "label": {
+    "category": "bug",
+    "priority": "medium",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 415,
+   "text": "Do you offer gift cards?",
+   "label": {
+    "category": "billing",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 416,
+   "text": "Great update! The new filters are exactly what we needed.",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   }
+  },
+  {
+   "id": 417,
+   "text": "My headphones (ORD-39004) arrived without the charging cable, so I can't use them.",
+   "label": {
+    "category": "shipping",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 418,
+   "text": "Checkout shows prices in euros instead of dollars for all US customers since this morning.",
+   "label": {
+    "category": "bug",
+    "priority": "urgent",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 419,
+   "text": "Please add my accountant as a read-only user on our account.",
+   "label": {
+    "category": "account",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 420,
+   "text": "My refund for ORD-70412 was approved 2 weeks ago but hasn't arrived. Can you check?",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  }
+ ]
+}
