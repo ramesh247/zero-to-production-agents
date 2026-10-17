@@ -66,3 +66,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | Your chain is 3 calls. Where does the latency go? |
 | Senior | Fields were 100% right in every design. What does that tell you? |
 | Senior | When does a chain earn its extra calls? |
+
+## 06 · Improving prompts with a tiny eval set ([full pack](06-eval-driven-prompting/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Your prompt scores 85% on the tickets you built it with. What's its real accuracy? |
+| Mid ⭐ | Your new prompt scores 100% on dev. Do you ship it? |
+| Mid | v3 beats v2 by 5 points on test. Is v3 better? |
+| Mid | Why do you need three sets? Isn't a train/test split enough? |
+| Senior | A ticket keeps flipping between versions, even when you didn't touch its rule. Why? |
+| Senior | Running the eval takes time and money. How often should you run it? |
+| Senior | One test ticket was wrong in every version. What do you learn from it? |
+| Senior | What is the smallest eval that's still useful? |

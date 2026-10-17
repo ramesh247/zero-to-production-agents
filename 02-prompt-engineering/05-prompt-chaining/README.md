@@ -39,4 +39,4 @@ jupyter notebook notebook.ipynb
 **Builds on:** [03 · Chain-of-thought](../03-chain-of-thought/) and [04 · XML tags and output templates](../04-xml-and-output-formatting/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [06 · Eval-driven prompting](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [06 · Eval-driven prompting](../06-eval-driven-prompting/).

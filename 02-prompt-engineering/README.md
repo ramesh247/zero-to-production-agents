@@ -9,7 +9,7 @@ Part 2 of [Zero to Production Agents](../README.md).
 | 03 | [Chain-of-thought and extended thinking, measured](03-chain-of-thought/) | notebook | ✅ [interview pack](03-chain-of-thought/INTERVIEW.md) |
 | 04 | [Structuring prompts with XML tags and output templates](04-xml-and-output-formatting/) | notebook | ✅ [interview pack](04-xml-and-output-formatting/INTERVIEW.md) |
 | 05 | [Prompt chaining: break one hard prompt into three easy ones](05-prompt-chaining/) | notebook | ✅ [interview pack](05-prompt-chaining/INTERVIEW.md) |
-| 06 | Stop guessing: improve prompts with a tiny eval set | notebook | coming soon |
+| 06 | [Stop guessing: improve prompts with a tiny eval set](06-eval-driven-prompting/) | notebook | ✅ [interview pack](06-eval-driven-prompting/INTERVIEW.md) |
 | 07 | Versioning and testing prompts like code | code | coming soon |
 | 08 | 7 prompt anti-patterns and how to fix them | notebook | coming soon |
 
