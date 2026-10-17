@@ -50,4 +50,4 @@ With thinking off, the "answer only" prompt still wrote ~1,100 tokens of visible
 **Builds on:** [02 · Zero-shot vs few-shot](../02-zero-vs-few-shot/), the catalog from [06 · Prompt caching](../../01-genai-llm-foundations/06-prompt-caching/) and [08 · Choosing a model](../../01-genai-llm-foundations/08-choosing-a-model/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [04 · XML tags and output templates](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [04 · XML tags and output templates](../04-xml-and-output-formatting/).
