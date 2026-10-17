@@ -43,4 +43,4 @@ All 3 labels right:
 **Builds on:** [05 · Prompt chaining](../05-prompt-chaining/), and the prompts from [01](../01-anatomy-of-a-prompt/) and [02](../02-zero-vs-few-shot/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [07 · Versioning and testing prompts like code](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [07 · Versioning and testing prompts like code](../07-prompt-versioning/).

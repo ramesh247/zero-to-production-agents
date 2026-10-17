@@ -1,0 +1,25 @@
+# Example GitHub Actions workflow. Copy it to .github/workflows/ at the root of your own repo.
+# Pull requests run the tests in replay mode: no API key, no cost, under a second.
+# A manual run can re-record a new prompt version with the API key stored as a repository secret.
+name: prompt-tests
+on:
+  pull_request:
+    paths: ["prompts/**", "src/**", "tests/**", "snapshots/**"]
+  workflow_dispatch:
+    inputs:
+      record:
+        description: "Prompt to record, e.g. triage@v4 (leave empty to only run tests)"
+        required: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - name: Record a new version (manual runs only)
+        if: ${{ github.event.inputs.record != '' }}
+        env: {ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}"}
+        run: python -m src.evaluate ${{ github.event.inputs.record }} --set test --mode record --baseline triage@v3 --max-drop 0.05
+      - run: python -m pytest -q

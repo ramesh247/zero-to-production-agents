@@ -1,0 +1,59 @@
+{
+ "model": "claude-haiku-5-5",
+ "source": "results/demo.txt",
+ "record": {
+  "triage@v1": {
+   "score_pct": 70,
+   "right": 42,
+   "total": 60,
+   "cost": 0.0042,
+   "seconds": 6.61
+  },
+  "triage@v2": {
+   "score_pct": 85,
+   "right": 51,
+   "total": 60,
+   "cost": 0.0048,
+   "seconds": 11.4
+  },
+  "triage@v3": {
+   "score_pct": 90,
+   "right": 54,
+   "total": 60,
+   "cost": 0.0051,
+   "seconds": 6.95
+  },
+  "triage@v3.1": {
+   "score_pct": 90,
+   "right": 54,
+   "total": 60,
+   "cost": 0.0051,
+   "seconds": 6.57
+  }
+ },
+ "record_v3_dev": {
+  "score_pct": 88,
+  "right": 53,
+  "total": 60,
+  "cost": 0.0051,
+  "seconds": 6.6
+ },
+ "replay_v3": {
+  "score_pct": 90,
+  "right": 54,
+  "total": 60,
+  "cost": 0.0,
+  "seconds": 0.0
+ },
+ "live_rerun_v3": {
+  "score_pct": 92,
+  "right": 55,
+  "total": 60,
+  "cost": 0.0051,
+  "seconds": 6.3
+ },
+ "pytest_replay": "8 passed in 0.02s",
+ "pytest_after_in_place_edit": "6 failed, 2 passed in 0.02s",
+ "gate_v1_vs_v3": "GATE FAILED: dropped 20%, more than the allowed 5%",
+ "record_cost_total": 0.0243
+}

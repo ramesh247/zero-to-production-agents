@@ -1,0 +1,8 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt": "triage@v1",
+ "prompt_hash": "4846d3fdce59",
+ "run": 2,
+ "text": "{\"category\": \"feature_request\", \"priority\": \"medium\", \"sentiment\": \"neutral\"}",
+ "cost": 7.1e-05
+}

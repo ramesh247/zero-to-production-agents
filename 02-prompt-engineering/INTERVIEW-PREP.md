@@ -79,3 +79,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | Running the eval takes time and money. How often should you run it? |
 | Senior | One test ticket was wrong in every version. What do you learn from it? |
 | Senior | What is the smallest eval that's still useful? |
+
+## 07 · Versioning and testing prompts like code ([full pack](07-prompt-versioning/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Why keep prompts in versioned files instead of strings in the code? |
+| Mid ⭐ | LLM tests are slow, cost money and give different answers each run. How do you test prompts in CI? |
+| Mid | You re-ran the exact same prompt and got 92% instead of 90%. Which is right? |
+| Mid | You changed "When two rules disagree" to "If two rules disagree". Do you need to re-run the eval? |
+| Senior | What should the gate check? |
+| Senior | You have a score gate. Why also test specific "golden" tickets? |
+| Senior | The provider releases a new model version. What happens to your tests? |
+| Senior | Why not just compare the new prompt with a fresh run of the old one? |

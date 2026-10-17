@@ -1,0 +1,85 @@
+## 1. Record each version once (calls the API, saves snapshots)
+$ python -m src.evaluate triage@v1 --set test --mode record
+triage@v1 (hash 4846d3fdce59) on test: 70% all 3 labels right (42/60) | mode record | $0.0042 | 6.61 s
+[exit code 0]
+
+$ python -m src.evaluate triage@v2 --set test --mode record
+triage@v2 (hash 019a10ae6a02) on test: 85% all 3 labels right (51/60) | mode record | $0.0048 | 11.40 s
+[exit code 0]
+
+$ python -m src.evaluate triage@v3 --set test --mode record
+triage@v3 (hash 06938ed5aa0a) on test: 90% all 3 labels right (54/60) | mode record | $0.0051 | 6.95 s
+[exit code 0]
+
+$ python -m src.evaluate triage@v3 --set dev --mode record
+triage@v3 (hash 06938ed5aa0a) on dev: 88% all 3 labels right (53/60) | mode record | $0.0051 | 6.60 s
+[exit code 0]
+
+## 2. Replay: same numbers, no API key, no cost
+$ python -m src.evaluate triage@v3 --set test --mode replay --baseline triage@v2 --min-score 0.85
+triage@v3 (hash 06938ed5aa0a) on test: 90% all 3 labels right (54/60) | mode replay | $0.0000 | 0.00 s
+vs triage@v2 (hash 019a10ae6a02): 85% -> 90% (+5%) | tickets better: 2 [403, 404] | worse: 1 [405]
+GATE PASSED
+[exit code 0]
+
+## 3. A worse version is blocked by the gate
+$ python -m src.evaluate triage@v1 --set test --mode replay --baseline triage@v3 --max-drop 0.05
+triage@v1 (hash 4846d3fdce59) on test: 70% all 3 labels right (42/60) | mode replay | $0.0000 | 0.00 s
+vs triage@v3 (hash 06938ed5aa0a): 90% -> 70% (-20%) | tickets better: 0 [] | worse: 4 [403, 404, 414, 419]
+GATE FAILED: dropped 20%, more than the allowed 5%
+[exit code 1]
+
+## 4. The test suite (replay mode)
+$ python -m pytest -q
+........                                                                 [100%]
+8 passed in 0.02s
+[exit code 0]
+
+## 5. How noisy is a recording? Run the same v3 live again (nothing saved)
+$ python -m src.evaluate triage@v3 --set test --mode live --baseline triage@v3
+triage@v3 (hash 06938ed5aa0a) on test: 92% all 3 labels right (55/60) | mode live | $0.0051 | 6.30 s
+vs triage@v3 (hash 06938ed5aa0a): 90% -> 92% (+2%) | tickets better: 1 [405] | worse: 0 []
+[exit code 0]
+
+## 6. Edit the released v3 in place: 'When two rules disagree:' -> 'If two rules disagree:'
+$ diff v3.md (before) v3.md (after)
+< When two rules disagree:
+> If two rules disagree:
+
+$ python -m pytest -q --tb=line
+..FFFFFF                                                                 [100%]
+=================================== FAILURES ===================================
+tests/test_prompts.py:31: AssertionError: triage@v3 was edited after release (hash 843e3790a2d7, locked 06938ed5aa0a). Released prompts are immutable: copy it to a new version file instead.
+src/llm.py:65: src.llm.MissingSnapshot: triage@v3 (hash 843e3790a2d7) was never recorded for this ticket/run. Run the eval with --mode record.
+src/llm.py:65: src.llm.MissingSnapshot: triage@v3 (hash 843e3790a2d7) was never recorded for this ticket/run. Run the eval with --mode record.
+src/llm.py:65: src.llm.MissingSnapshot: triage@v3 (hash 843e3790a2d7) was never recorded for this ticket/run. Run the eval with --mode record.
+src/llm.py:65: src.llm.MissingSnapshot: triage@v3 (hash 843e3790a2d7) was never recorded for this ticket/run. Run the eval with --mode record.
+src/llm.py:65: src.llm.MissingSnapshot: triage@v3 (hash 843e3790a2d7) was never recorded for this ticket/run. Run the eval with --mode record.
+=========================== short test summary info ============================
+FAILED tests/test_prompts.py::test_prompt_matches_lockfile[triage@v3] - Asser...
+FAILED tests/test_prompts.py::test_golden_ticket[1] - src.llm.MissingSnapshot...
+FAILED tests/test_prompts.py::test_golden_ticket[2] - src.llm.MissingSnapshot...
+FAILED tests/test_prompts.py::test_golden_ticket[408] - src.llm.MissingSnapsh...
+FAILED tests/test_prompts.py::test_golden_ticket[413] - src.llm.MissingSnapsh...
+FAILED tests/test_prompts.py::test_score_gate - src.llm.MissingSnapshot: tria...
+6 failed, 2 passed in 0.02s
+[exit code 1]
+
+## 7. Do it properly: release the edit as v3.1, record it, compare with the released v3
+$ python -m src.lock
+triage@v1: 4846d3fdce59
+triage@v2: 019a10ae6a02
+triage@v3: 06938ed5aa0a
+triage@v3.1: 843e3790a2d7
+[exit code 0]
+
+$ python -m src.evaluate triage@v3.1 --set test --mode record --baseline triage@v3
+triage@v3.1 (hash 843e3790a2d7) on test: 90% all 3 labels right (54/60) | mode record | $0.0051 | 6.57 s
+vs triage@v3 (hash 06938ed5aa0a): 90% -> 90% (+0%) | tickets better: 0 [] | worse: 0 []
+[exit code 0]
+
+$ python -m pytest -q
+.........                                                                [100%]
+9 passed in 0.02s
+[exit code 0]
+

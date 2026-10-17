@@ -1,0 +1,8 @@
+{
+ "model": "claude-haiku-5-5",
+ "prompt": "triage@v2",
+ "prompt_hash": "019a10ae6a02",
+ "run": 3,
+ "text": "{\"category\": \"billing\", \"priority\": \"low\", \"sentiment\": \"neutral\"}",
+ "cost": 7.790000000000001e-05
+}
