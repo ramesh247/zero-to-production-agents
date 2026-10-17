@@ -1,0 +1,205 @@
+{
+ "note": "fresh: the 20 tickets from build #010 (labelled with the #009 rubric before any model run). Used here only for scoring, never for tuning.",
+ "fields": {
+  "category": [
+   "billing",
+   "bug",
+   "account",
+   "shipping",
+   "feature_request"
+  ],
+  "priority": [
+   "low",
+   "medium",
+   "high",
+   "urgent"
+  ],
+  "sentiment": [
+   "negative",
+   "neutral",
+   "positive"
+  ]
+ },
+ "fresh": [
+  {
+   "id": 201,
+   "text": "Checkout fails for every customer using PayPal since 9am. We're losing orders.",
+   "label": {
+    "category": "bug",
+    "priority": "urgent",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 202,
+   "text": "Could you send me last month's invoice again? I can't find the email.",
+   "label": {
+    "category": "billing",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 203,
+   "text": "I was charged $19.99 instead of $14.99 for ORD-62210. Please refund the difference.",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 204,
+   "text": "My order ORD-70019 shows delivered but the box isn't here and my neighbours haven't seen it.",
+   "label": {
+    "category": "shipping",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 205,
+   "text": "The mobile app logs me out every few minutes. I can still use the website.",
+   "label": {
+    "category": "account",
+    "priority": "medium",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 206,
+   "text": "Your new onboarding guide is brilliant, thank you!",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   }
+  },
+  {
+   "id": 207,
+   "text": "Please add Apple Pay at checkout. We'd move our whole team's purchasing over the day you do.",
+   "label": {
+    "category": "feature_request",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 208,
+   "text": "I see a login from an IP in another country that wasn't me. Please lock my account.",
+   "label": {
+    "category": "account",
+    "priority": "urgent",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 209,
+   "text": "The search bar ignores accents, so 'café' finds nothing. Small issue.",
+   "label": {
+    "category": "bug",
+    "priority": "medium",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 210,
+   "text": "Our invoices are due to the auditors on Thursday and the PDF download returns a 404.",
+   "label": {
+    "category": "bug",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 211,
+   "text": "Can I change the delivery address for ORD-81120 before it ships?",
+   "label": {
+    "category": "shipping",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 212,
+   "text": "I was billed twice this month for the same subscription. Could you refund one of them?",
+   "label": {
+    "category": "billing",
+    "priority": "high",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 213,
+   "text": "The parcel for ORD-30055 came in the wrong colour. Not a big deal, an exchange would be fine.",
+   "label": {
+    "category": "shipping",
+    "priority": "medium",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 214,
+   "text": "Third time asking: where is my refund for ORD-11873?? It's been 3 weeks.",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 215,
+   "text": "I can't reset my password, the reset email never arrives, and I need to place an order today.",
+   "label": {
+    "category": "account",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 216,
+   "text": "How do I turn on two-factor authentication?",
+   "label": {
+    "category": "account",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  },
+  {
+   "id": 217,
+   "text": "Dashboard charts take 20 seconds to load since Tuesday. Everything works, just slow.",
+   "label": {
+    "category": "bug",
+    "priority": "medium",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 218,
+   "text": "Thanks for the quick refund on ORD-55120, appreciated!",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   }
+  },
+  {
+   "id": 219,
+   "text": "The app crashes as soon as I open my cart on iPhone, so I can't buy anything.",
+   "label": {
+    "category": "bug",
+    "priority": "high",
+    "sentiment": "negative"
+   }
+  },
+  {
+   "id": 220,
+   "text": "We'd like one annual invoice instead of monthly ones for our accounting. Is that possible?",
+   "label": {
+    "category": "billing",
+    "priority": "low",
+    "sentiment": "neutral"
+   }
+  }
+ ]
+}

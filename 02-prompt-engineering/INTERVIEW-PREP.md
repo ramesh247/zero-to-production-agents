@@ -27,3 +27,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | One ticket was wrong in every single prompt. Whose fault? |
 | Senior | 85% vs 78%. Is the improvement real? |
 | Senior | Rubric v2 scored 100% on build #009's test set. Why isn't that the headline? |
+
+## 03 · Chain-of-thought and extended thinking ([full pack](03-chain-of-thought/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Does "think step by step" make the model more accurate? |
+| Junior | Does thinking slow down easy questions too? |
+| Mid ⭐ | You told the model "reply with only the answer". Why did it write 3,251 tokens? |
+| Mid | Extended thinking must be much more expensive, right? |
+| Mid | Which effort level would you ship? |
+| Senior | Should you turn on thinking for ticket triage? |
+| Senior | Visible reasoning and built-in thinking used about the same tokens. Why such different accuracy? |
+| Senior | Product wants these catalog answers in under 1 second. What do you say? |

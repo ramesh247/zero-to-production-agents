@@ -45,4 +45,4 @@ Scored on **20 fresh tickets** labelled before any model run. Examples come only
 **Builds on:** [01 · Anatomy of a production prompt](../01-anatomy-of-a-prompt/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [03 · Chain-of-thought and extended thinking](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [03 · Chain-of-thought and extended thinking](../03-chain-of-thought/).
