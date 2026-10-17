@@ -53,3 +53,16 @@ Every question comes with a trap answer, a real answer backed by a notebook run,
 | Senior | XML template or structured output? |
 | Senior | One injected ticket was "wrong" in every style. Was the injection to blame? |
 | Senior | What would a real injection test look like? |
+
+## 05 · Prompt chaining ([full pack](05-prompt-chaining/INTERVIEW.md))
+
+| Level | Question |
+|---|---|
+| Junior | Is a chain of small prompts always better than one big prompt? |
+| Mid ⭐ | You split the prompt into three steps and the replies got worse. How? |
+| Mid | Did splitting improve the labels? |
+| Mid | Every design "failed" the refund rule on the same ticket. Why? |
+| Senior | Is "never mention the priority" a good rule to check with a regex? |
+| Senior | Your chain is 3 calls. Where does the latency go? |
+| Senior | Fields were 100% right in every design. What does that tell you? |
+| Senior | When does a chain earn its extra calls? |

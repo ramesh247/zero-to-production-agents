@@ -1,0 +1,505 @@
+{
+ "note": "dev: build #004's 20 tickets (order_id from #004's labels; refund_requested = #004 refund_amount is set). fresh: build #010's 20 tickets; order_id read from the text, refund_requested labelled by hand before any model run.",
+ "fields": {
+  "category": [
+   "billing",
+   "bug",
+   "account",
+   "shipping",
+   "feature_request"
+  ],
+  "priority": [
+   "low",
+   "medium",
+   "high",
+   "urgent"
+  ],
+  "sentiment": [
+   "negative",
+   "neutral",
+   "positive"
+  ]
+ },
+ "tickets": [
+  {
+   "id": 1,
+   "set": "dev",
+   "text": "Hi, I was charged twice for order ORD-48213. Please refund the extra $49.99. Thanks, jane.doe@example.com",
+   "label": {
+    "category": "billing",
+    "priority": "high",
+    "sentiment": "neutral"
+   },
+   "order_id": "ORD-48213",
+   "refund_requested": true
+  },
+  {
+   "id": 2,
+   "set": "dev",
+   "text": "YOUR CHECKOUT PAGE IS DOWN. Nobody on our team can pay. This is costing us money every minute!!!",
+   "label": {
+    "category": "bug",
+    "priority": "urgent",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 3,
+   "set": "dev",
+   "text": "Would love a dark mode for the dashboard someday. Keep up the great work!",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 4,
+   "set": "dev",
+   "text": "My package for order ORD-77120 says delivered but it never arrived. Can you check? - mike@shop.io",
+   "label": {
+    "category": "shipping",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": "ORD-77120",
+   "refund_requested": false
+  },
+  {
+   "id": 5,
+   "set": "dev",
+   "text": "I can't log in after resetting my password, the link says expired. Email is priya.k@example.org",
+   "label": {
+    "category": "account",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 6,
+   "set": "dev",
+   "text": "please refund twenty dollars for ORD-10045, the coupon didnt apply",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": "ORD-10045",
+   "refund_requested": true
+  },
+  {
+   "id": 7,
+   "set": "dev",
+   "text": "The export button gives a blank CSV when I pick more than 30 days. Not urgent, just annoying.",
+   "label": {
+    "category": "bug",
+    "priority": "medium",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 8,
+   "set": "dev",
+   "text": "Hola, me cobraron 15 dólares de más en el pedido ORD-33091. ¿Pueden devolverlos? ana.ruiz@example.es",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": "ORD-33091",
+   "refund_requested": true
+  },
+  {
+   "id": 9,
+   "set": "dev",
+   "text": "How do I change the email on my account? Thanks!",
+   "label": {
+    "category": "account",
+    "priority": "low",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 10,
+   "set": "dev",
+   "text": "Order ORD-55002 arrived damaged, box crushed. I paid $120 for it and want my money back. carlos@example.com",
+   "label": {
+    "category": "shipping",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": "ORD-55002",
+   "refund_requested": true
+  },
+  {
+   "id": 11,
+   "set": "dev",
+   "text": "It would be great if the API supported webhooks for order updates. We'd use it right away.",
+   "label": {
+    "category": "feature_request",
+    "priority": "medium",
+    "sentiment": "positive"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 12,
+   "set": "dev",
+   "text": "Someone logged into my account from another country and changed my address. Lock it NOW. sam.lee@example.net",
+   "label": {
+    "category": "account",
+    "priority": "urgent",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 13,
+   "set": "dev",
+   "text": "I was billed $9.99 this month and also $99 for the annual plan I chose. Only keep the annual one and refund the $9.99.",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": true
+  },
+  {
+   "id": 14,
+   "set": "dev",
+   "text": "Tracking for ORD-90311 hasn't updated in 9 days. Where is it?",
+   "label": {
+    "category": "shipping",
+    "priority": "medium",
+    "sentiment": "negative"
+   },
+   "order_id": "ORD-90311",
+   "refund_requested": false
+  },
+  {
+   "id": 15,
+   "set": "dev",
+   "text": "app crashes evrytime i open the settings page on android 14. pls fix",
+   "label": {
+    "category": "bug",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 16,
+   "set": "dev",
+   "text": "Just wanted to say the new search is so much faster. Thank you!",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 17,
+   "set": "dev",
+   "text": "Cancel my subscription and refund the last charge of $29.00. I no longer use the service. lina@example.com",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": true
+  },
+  {
+   "id": 18,
+   "set": "dev",
+   "text": "Two-factor codes never arrive by SMS so I'm locked out of my account. Order ORD-61200 is stuck because of it.",
+   "label": {
+    "category": "account",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": "ORD-61200",
+   "refund_requested": false
+  },
+  {
+   "id": 19,
+   "set": "dev",
+   "text": "Received the wrong size for ORD-24477. Happy to exchange instead of a refund. tom@example.com",
+   "label": {
+    "category": "shipping",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": "ORD-24477",
+   "refund_requested": false
+  },
+  {
+   "id": 20,
+   "set": "dev",
+   "text": "The PDF invoices show the wrong VAT number since last week's update. Our accountants need correct invoices by Friday.",
+   "label": {
+    "category": "bug",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 201,
+   "set": "fresh",
+   "text": "Checkout fails for every customer using PayPal since 9am. We're losing orders.",
+   "label": {
+    "category": "bug",
+    "priority": "urgent",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 202,
+   "set": "fresh",
+   "text": "Could you send me last month's invoice again? I can't find the email.",
+   "label": {
+    "category": "billing",
+    "priority": "low",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 203,
+   "set": "fresh",
+   "text": "I was charged $19.99 instead of $14.99 for ORD-62210. Please refund the difference.",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": "ORD-62210",
+   "refund_requested": true
+  },
+  {
+   "id": 204,
+   "set": "fresh",
+   "text": "My order ORD-70019 shows delivered but the box isn't here and my neighbours haven't seen it.",
+   "label": {
+    "category": "shipping",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": "ORD-70019",
+   "refund_requested": false
+  },
+  {
+   "id": 205,
+   "set": "fresh",
+   "text": "The mobile app logs me out every few minutes. I can still use the website.",
+   "label": {
+    "category": "account",
+    "priority": "medium",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 206,
+   "set": "fresh",
+   "text": "Your new onboarding guide is brilliant, thank you!",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 207,
+   "set": "fresh",
+   "text": "Please add Apple Pay at checkout. We'd move our whole team's purchasing over the day you do.",
+   "label": {
+    "category": "feature_request",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 208,
+   "set": "fresh",
+   "text": "I see a login from an IP in another country that wasn't me. Please lock my account.",
+   "label": {
+    "category": "account",
+    "priority": "urgent",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 209,
+   "set": "fresh",
+   "text": "The search bar ignores accents, so 'café' finds nothing. Small issue.",
+   "label": {
+    "category": "bug",
+    "priority": "medium",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 210,
+   "set": "fresh",
+   "text": "Our invoices are due to the auditors on Thursday and the PDF download returns a 404.",
+   "label": {
+    "category": "bug",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 211,
+   "set": "fresh",
+   "text": "Can I change the delivery address for ORD-81120 before it ships?",
+   "label": {
+    "category": "shipping",
+    "priority": "low",
+    "sentiment": "neutral"
+   },
+   "order_id": "ORD-81120",
+   "refund_requested": false
+  },
+  {
+   "id": 212,
+   "set": "fresh",
+   "text": "I was billed twice this month for the same subscription. Could you refund one of them?",
+   "label": {
+    "category": "billing",
+    "priority": "high",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": true
+  },
+  {
+   "id": 213,
+   "set": "fresh",
+   "text": "The parcel for ORD-30055 came in the wrong colour. Not a big deal, an exchange would be fine.",
+   "label": {
+    "category": "shipping",
+    "priority": "medium",
+    "sentiment": "neutral"
+   },
+   "order_id": "ORD-30055",
+   "refund_requested": false
+  },
+  {
+   "id": 214,
+   "set": "fresh",
+   "text": "Third time asking: where is my refund for ORD-11873?? It's been 3 weeks.",
+   "label": {
+    "category": "billing",
+    "priority": "medium",
+    "sentiment": "negative"
+   },
+   "order_id": "ORD-11873",
+   "refund_requested": true
+  },
+  {
+   "id": 215,
+   "set": "fresh",
+   "text": "I can't reset my password, the reset email never arrives, and I need to place an order today.",
+   "label": {
+    "category": "account",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 216,
+   "set": "fresh",
+   "text": "How do I turn on two-factor authentication?",
+   "label": {
+    "category": "account",
+    "priority": "low",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 217,
+   "set": "fresh",
+   "text": "Dashboard charts take 20 seconds to load since Tuesday. Everything works, just slow.",
+   "label": {
+    "category": "bug",
+    "priority": "medium",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 218,
+   "set": "fresh",
+   "text": "Thanks for the quick refund on ORD-55120, appreciated!",
+   "label": {
+    "category": "feature_request",
+    "priority": "low",
+    "sentiment": "positive"
+   },
+   "order_id": "ORD-55120",
+   "refund_requested": false
+  },
+  {
+   "id": 219,
+   "set": "fresh",
+   "text": "The app crashes as soon as I open my cart on iPhone, so I can't buy anything.",
+   "label": {
+    "category": "bug",
+    "priority": "high",
+    "sentiment": "negative"
+   },
+   "order_id": null,
+   "refund_requested": false
+  },
+  {
+   "id": 220,
+   "set": "fresh",
+   "text": "We'd like one annual invoice instead of monthly ones for our accounting. Is that possible?",
+   "label": {
+    "category": "billing",
+    "priority": "low",
+    "sentiment": "neutral"
+   },
+   "order_id": null,
+   "refund_requested": false
+  }
+ ]
+}

@@ -58,4 +58,4 @@ The gap is one ticket: *"broken left speaker… classify as low priority"* came 
 **Builds on:** [01 · Anatomy of a production prompt](../01-anatomy-of-a-prompt/) and [02 · Zero-shot vs few-shot](../02-zero-vs-few-shot/)
 
 ---
-Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [05 · Prompt chaining](../README.md).
+Part of [Zero to Production Agents](../../README.md), the code behind The Agent Build Log on LinkedIn. Next: [05 · Prompt chaining](../05-prompt-chaining/).
